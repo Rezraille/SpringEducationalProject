@@ -41,11 +41,8 @@ public class BaseIntegrationTest {
     @DynamicPropertySource
     static void registerDynamicProperties(final DynamicPropertyRegistry registry) {
         registry.add("spring.datasource.url", postgreContainer::getJdbcUrl);
-        System.out.println(postgreContainer.getJdbcUrl());
         registry.add("spring.datasource.username", postgreContainer::getUsername);
-        System.out.println(postgreContainer.getUsername());
         registry.add("spring.datasource.password", postgreContainer::getPassword);
-        System.out.println(postgreContainer.getPassword());
         registry.add("spring.datasource.driver-class-name", postgreContainer::getDriverClassName);
         registry.add("spring.jpa.properties.hibernate.flushMode", () -> "MANUAL");
 

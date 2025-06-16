@@ -13,23 +13,23 @@ class UtilTest {
 
 
     @Test
-    public void isCorrectNumber_positiveNumber_returnsTrue() {
-        assertTrue(util.isCorrectNumber(10));
+    public void isPositiveNumber_positiveNumber_returnsTrue() {
+        assertTrue(util.isPositiveNumber(10));
     }
 
     @Test
-    public void isCorrectNumber_zero_returnsTrue() {
-        assertTrue(util.isCorrectNumber(0));
+    public void isPositiveNumber_zero_returnsTrue() {
+        assertTrue(util.isPositiveNumber(0));
     }
 
     @Test
-    public void isCorrectNumber_negativeNumber_returnsFalse() {
-        assertFalse(util.isCorrectNumber(-5));
+    public void isPositiveNumber_negativeNumber_returnsFalse() {
+        assertFalse(util.isPositiveNumber(-5));
     }
 
     @Test
-    public void isCorrectNumber_null_returnsFalse() {
-        assertFalse(util.isCorrectNumber(null));
+    public void isPositiveNumber_null_returnsFalse() {
+        assertFalse(util.isPositiveNumber(null));
     }
 
     @Test

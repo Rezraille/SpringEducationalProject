@@ -1,13 +1,14 @@
 spring:
+  application:
+    name: user-service
   datasource:
-    url: jdbc:postgresql://localhost:5433/
+    url: jdbc:postgresql://localhost:5432/
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
   jpa:
     properties:
       hibernate:
-
         format_sql: true
         use_sql_comments: true
         hbm2ddl:
@@ -18,6 +19,13 @@ spring:
           pool_size: 10
           autocommit: false
         current_session_context_class: thread
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      client-id: example
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      retries: 2
 
 
 server:

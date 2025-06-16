@@ -8,37 +8,28 @@ import java.util.regex.Pattern;
 @Component
 public class Util {
 
-    public boolean isCorrectNumber(Integer number) {
-        try {
-            return number >= 0 ? true : false;
-        } catch (Exception exception) {
-            return false;
-        }
+    public boolean isPositiveNumber(Integer number) {
+        if (number == null) return false;
+        return number >= 0;
     }
 
     private boolean isEmail(String str) {
+        if (str == null) return false;
         String regex = "[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\\.[a-zA-Z0-9_-]+";
         Pattern pattern = Pattern.compile(regex);
-        try {
-            String input = str.trim();
-            return pattern.matcher(input).matches() ? true : false;
-        } catch (Exception exception) {
-            return false;
-        }
+        return pattern.matcher(str.trim()).matches();
+
     }
 
     private boolean isName(String str) {
+        if (str == null) return false;
         String regex = "[\\p{L}]+";
         Pattern pattern = Pattern.compile(regex);
-        try {
-            String input = str.trim();
-            return pattern.matcher(input).matches() ? true : false;
-        } catch (Exception exception) {
-            return false;
-        }
+        return pattern.matcher(str.trim()).matches();
     }
 
     public boolean isCorrectUserDTO(UserDTO userDTO) {
-        return isCorrectNumber(userDTO.id()) && isName(userDTO.name()) && isEmail(userDTO.email()) && isCorrectNumber(userDTO.age());
+        if (userDTO == null) return false;
+        return isPositiveNumber(userDTO.id()) && isName(userDTO.name()) && isEmail(userDTO.email()) && isPositiveNumber(userDTO.age());
     }
 }
