@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+
+        format_sql: true
+        use_sql_comments: true
+        hbm2ddl:
+          auto: update
+        cache:
+          use_second_level_cache: false
+        connection:
+          pool_size: 10
+          autocommit: false
+        current_session_context_class: thread
+
+
+server:
+  port: 8181

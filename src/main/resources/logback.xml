@@ -1,0 +1,62 @@
+<configuration>
+    <!-- Global configuration for all Hibernate versions -->
+
+    <!-- Appender for output FILE -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logging.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>logging.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <maxFileSize>20MB</maxFileSize>
+            <maxHistory>5</maxHistory>
+            <totalSizeCap>100MB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS dd.MM} %-5level [%logger] - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 1. Appender for output CONSOLE -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>WARN</level>
+        </filter>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS dd.MM} %-5level [%logger] - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Root logger -->
+    <root level="INFO">
+        <appender-ref ref="FILE"/>
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+    <!-- Hibernate basic log level for all messages -->
+    <logger name="org.hibernate" level="INFO"/>
+
+    <!-- SQL statements and parameters -->
+    <logger name="org.hibernate.SQL" level="DEBUG"/>
+    <logger name="org.hibernate.type.descriptor.sql" level="TRACE"/>
+
+    <!--  schema creation -->
+    <logger name="org.hibernate.tool.hbm2ddl" level="INFO"/>
+
+    <!--  internal processes Hibernate -->
+    <logger name="org.hibernate.engine" level="INFO"/>
+
+    <!-- Spring (WEB, Data JPA) -->
+    <logger name="org.springframework.web" level="INFO"/>
+    <logger name="org.springframework.boot.web.servlet" level="INFO"/>
+    <logger name="org.springframework.boot.autoconfigure.web" level="INFO"/>
+    <logger name="org.springframework.data.jpa" level="INFO"/>
+
+    <!-- Test (JUnit, MockMVC, Spring Test) -->
+    <logger name="org.springframework.test" level="DEBUG"/>
+    <logger name="org.junit" level="DEBUG"/>
+    <logger name="org.mockito" level="DEBUG"/>
+
+    <!-- Application packages -->
+    <logger name="ru.aston.service.impl" level="TRACE"/>
+    <logger name="ru.aston.controller" level="TRACE"/>
+    <logger name="ru.aston.dao" level="INFO"/>
+</configuration>
