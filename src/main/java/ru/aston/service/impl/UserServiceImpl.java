@@ -29,7 +29,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Optional<UserDTO> getUserById(Integer id) {
-        logger.trace("getUserById() id = {}" , id);
+        logger.info("getUserById() id = {}" , id);
         UserDTO userDTOFromDB = null;
         try {
             Optional<User> userOptional = userDao.findById(id);
@@ -44,7 +44,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Optional<UserDTO> createUser(UserDTO userDto) {
-        logger.trace("createUser() = {}" , userDto);
+        logger.info("createUser() = {}" , userDto);
         UserDTO userDTOFromDB = null;
         try {
 
@@ -65,7 +65,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public boolean updateUser(final UserDTO newUser, int oldUserId) {
-        logger.trace("updateUser() id = {} with {}",oldUserId, newUser);
+        logger.info("updateUser() id = {} with {}",oldUserId, newUser);
         try {
 
             int sumOfUpdate = userDao.updateUserAndReturnCount(
@@ -81,7 +81,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public boolean deleteUserById(final Integer id) {
 
-        logger.trace("deleteUserById() id = {}" , id);
+        logger.info("deleteUserById() id = {}" , id);
         try {
             int sumOfDeleted = userDao.deleteAndReturnCount(id);
             return sumOfDeleted > 0 ? true : false;
@@ -94,7 +94,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<UserDTO> findAllUsers() {
-        logger.trace("findAllUsers()");
+        logger.info("findAllUsers()");
         List<UserDTO> users = new ArrayList<>();
         try {
             users = userDao.findAll().stream()

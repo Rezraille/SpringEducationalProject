@@ -29,7 +29,7 @@ public class UserController {
 
     @GetMapping("read/id/{id}")
     public ResponseEntity<UserDTO> getUserById(@PathVariable Integer id) {
-        logger.trace("getUserById() id = {}", id);
+        logger.info("getUserById() id = {}", id);
         try {
             Optional<UserDTO> optionalUserDTO = Optional.empty();
             if (util.isCorrectNumber(id)) {
@@ -44,7 +44,7 @@ public class UserController {
 
     @PutMapping("create")
     public ResponseEntity<UserDTO> createUser(@RequestBody UserDTO userDTO) {
-        logger.trace("createUser() UserDTO  = {}", userDTO);
+        logger.info("createUser() UserDTO  = {}", userDTO);
         try {
             Optional<UserDTO> optionalUserDTO = Optional.empty();
             if (util.isCorrectUserDTO(userDTO)) {
@@ -59,7 +59,7 @@ public class UserController {
 
     @PutMapping("update/old-id/{id}")
     public ResponseEntity<Boolean> updateUser(@PathVariable Integer id, @RequestBody UserDTO userDTO) {
-        logger.trace("updateUser() id = {}, userDTO = {}", id, userDTO);
+        logger.info("updateUser() id = {}, userDTO = {}", id, userDTO);
         boolean isUpdate = false;
         try {
             if (util.isCorrectNumber(id) && util.isCorrectUserDTO(userDTO)) {
@@ -74,7 +74,7 @@ public class UserController {
 
     @DeleteMapping("delete/id/{id}")
     public ResponseEntity<Boolean> deleteUser(@PathVariable Integer id) {
-        logger.trace("deleteUser() id = {}", id);
+        logger.info("deleteUser() id = {}", id);
         try {
             boolean isRemove = false;
             if (util.isCorrectNumber(id)) {
@@ -89,7 +89,7 @@ public class UserController {
 
     @GetMapping("findAll")
     public ResponseEntity<List> findAllUsers() {
-        logger.trace("findAll()");
+        logger.info("findAll()");
         try {
             List<UserDTO> usersDto = userService.findAllUsers();
             return ResponseEntity.ok(usersDto);

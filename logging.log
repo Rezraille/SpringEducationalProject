@@ -1,0 +1,635 @@
+23:45:54.234 16.06 DEBUG [org.springframework.test.context.support.AbstractContextLoader] - Could not detect default resource locations for test class [ru.aston.userservice.SpringEducationalProjectApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+23:45:54.237 16.06 INFO  [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] - Could not detect default configuration classes for test class [ru.aston.userservice.SpringEducationalProjectApplicationTests]: SpringEducationalProjectApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:45:54.569 16.06 INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] - Found @SpringBootConfiguration ru.aston.SpringEducationalProjectApplication for test class ru.aston.userservice.SpringEducationalProjectApplicationTests
+23:45:54.896 16.06 DEBUG [org.springframework.test.context.util.TestContextSpringFactoriesUtils] - Skipping candidate TestExecutionListener [org.springframework.test.context.observation.MicrometerObservationRegistryTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: io.micrometer.context.ThreadLocalAccessor. MicrometerObservationRegistryTestExecutionListener requires io.micrometer:micrometer-observation:1.10.8 or higher and io.micrometer:context-propagation:1.0.3 or higher.
+23:45:54.966 16.06 DEBUG [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener] - Before test class: class [SpringEducationalProjectApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
+23:45:55.859 16.06 INFO  [ru.aston.userservice.SpringEducationalProjectApplicationTests] - Starting SpringEducationalProjectApplicationTests using Java 24.0.1 with PID 24020 (started by Nelly in D:\Java\2.Project\SpringEducationalProject)
+23:45:55.861 16.06 INFO  [ru.aston.userservice.SpringEducationalProjectApplicationTests] - No active profile set, falling back to 1 default profile: "default"
+23:45:57.209 16.06 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:45:57.388 16.06 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 135 ms. Found 1 JPA repository interface.
+23:45:58.162 16.06 INFO  [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:45:58.294 16.06 INFO  [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.6.15.Final
+23:45:58.375 16.06 INFO  [org.hibernate.cache.internal.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+23:45:59.161 16.06 INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+23:45:59.253 16.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+23:45:59.797 16.06 INFO  [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5336fc18
+23:45:59.800 16.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+23:45:59.983 16.06 INFO  [org.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+23:46:00.001 16.06 DEBUG [org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry] - addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@66c46a1d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@4b19808a)
+23:46:00.001 16.06 DEBUG [org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry] - addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7cd1a9b7) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@226e4591)
+23:46:01.879 16.06 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:46:02.370 16.06 INFO  [org.springframework.data.jpa.repository.query.QueryEnhancerFactory] - Hibernate is in classpath; If applicable, HQL parser will be used.
+23:46:02.658 16.06 WARN  [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:46:02.750 16.06 INFO  [org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean] - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+23:46:03.344 16.06 INFO  [ru.aston.userservice.SpringEducationalProjectApplicationTests] - Started SpringEducationalProjectApplicationTests in 8.291 seconds (process running for 12.467)
+23:46:03.353 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1, failureCount = 0]
+23:46:03.354 16.06 DEBUG [org.springframework.test.context.web.ServletTestExecutionListener] - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class ru.aston.userservice.SpringEducationalProjectApplicationTests
+23:46:03.375 16.06 DEBUG [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] - Performing dependency injection for test class ru.aston.userservice.SpringEducationalProjectApplicationTests
+23:46:03.376 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1, failureCount = 0]
+23:46:03.378 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 1, failureCount = 0]
+23:46:03.379 16.06 DEBUG [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener] - Before test method: class [SpringEducationalProjectApplicationTests], method [contextLoads], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+23:46:03.381 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1, failureCount = 0]
+23:46:03.381 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 4, missCount = 1, failureCount = 0]
+23:46:03.586 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 5, missCount = 1, failureCount = 0]
+23:46:03.592 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 1, failureCount = 0]
+23:46:03.595 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 7, missCount = 1, failureCount = 0]
+23:46:03.596 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 8, missCount = 1, failureCount = 0]
+23:46:03.596 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 9, missCount = 1, failureCount = 0]
+23:46:03.597 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 10, missCount = 1, failureCount = 0]
+23:46:03.598 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 11, missCount = 1, failureCount = 0]
+23:46:03.599 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 12, missCount = 1, failureCount = 0]
+23:46:03.601 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 13, missCount = 1, failureCount = 0]
+23:46:03.601 16.06 DEBUG [org.springframework.test.context.support.DirtiesContextTestExecutionListener] - After test method: class [SpringEducationalProjectApplicationTests], method [contextLoads], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+23:46:03.602 16.06 DEBUG [org.springframework.test.context.web.ServletTestExecutionListener] - Resetting RequestContextHolder for test class ru.aston.userservice.SpringEducationalProjectApplicationTests
+23:46:03.604 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 14, missCount = 1, failureCount = 0]
+23:46:03.605 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 15, missCount = 1, failureCount = 0]
+23:46:03.605 16.06 DEBUG [org.springframework.test.context.support.DirtiesContextTestExecutionListener] - After test class: class [SpringEducationalProjectApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
+23:46:03.785 16.06 DEBUG [org.springframework.test.context.support.AbstractContextLoader] - Could not detect default resource locations for test class [ru.aston.controller.UserControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+23:46:03.785 16.06 INFO  [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] - Could not detect default configuration classes for test class [ru.aston.controller.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:46:03.826 16.06 INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] - Found @SpringBootConfiguration ru.aston.SpringEducationalProjectApplication for test class ru.aston.controller.UserControllerTest
+23:46:03.828 16.06 DEBUG [org.springframework.test.context.util.TestContextSpringFactoriesUtils] - Skipping candidate TestExecutionListener [org.springframework.test.context.observation.MicrometerObservationRegistryTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: io.micrometer.context.ThreadLocalAccessor. MicrometerObservationRegistryTestExecutionListener requires io.micrometer:micrometer-observation:1.10.8 or higher and io.micrometer:context-propagation:1.0.3 or higher.
+23:46:03.828 16.06 DEBUG [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener] - Before test class: class [UserControllerTest], class annotated with @DirtiesContext [true] with mode [AFTER_CLASS]
+23:46:03.907 16.06 INFO  [org.testcontainers.images.PullPolicy] - Image pull policy will be performed by: DefaultPullPolicy()
+23:46:03.911 16.06 INFO  [org.testcontainers.utility.ImageNameSubstitutor] - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+23:46:03.943 16.06 INFO  [org.testcontainers.DockerClientFactory] - Testcontainers version: 1.21.0
+23:46:04.403 16.06 INFO  [org.testcontainers.dockerclient.DockerClientProviderStrategy] - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+23:46:04.973 16.06 INFO  [org.testcontainers.dockerclient.DockerClientProviderStrategy] - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+23:46:04.976 16.06 INFO  [org.testcontainers.DockerClientFactory] - Docker host IP address is localhost
+23:46:05.011 16.06 INFO  [org.testcontainers.DockerClientFactory] - Connected to docker: 
+  Server Version: 28.1.1
+  API Version: 1.49
+  Operating System: Docker Desktop
+  Total Memory: 15914 MB
+  Labels: 
+    com.docker.desktop.address=npipe://\\.\pipe\docker_cli
+23:46:05.160 16.06 INFO  [tc.testcontainers/ryuk:0.11.0] - Creating container for image: testcontainers/ryuk:0.11.0
+23:46:05.269 16.06 INFO  [org.testcontainers.utility.RegistryAuthLocator] - Credential helper/store (docker-credential-desktop) does not have credentials for https://index.docker.io/v1/
+23:46:05.529 16.06 INFO  [tc.testcontainers/ryuk:0.11.0] - Container testcontainers/ryuk:0.11.0 is starting: d301262407807054f28c30940d6579f9cf2eec10df155a119ff51e79a80eab7a
+23:46:06.006 16.06 INFO  [tc.testcontainers/ryuk:0.11.0] - Container testcontainers/ryuk:0.11.0 started in PT0.8457274S
+23:46:06.012 16.06 INFO  [org.testcontainers.utility.RyukResourceReaper] - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+23:46:06.012 16.06 INFO  [org.testcontainers.DockerClientFactory] - Checking the system...
+23:46:06.013 16.06 INFO  [org.testcontainers.DockerClientFactory] - ✔︎ Docker server version should be at least 1.6.0
+23:46:06.013 16.06 INFO  [tc.postgres:13] - Creating container for image: postgres:13
+23:46:06.125 16.06 INFO  [tc.postgres:13] - Container postgres:13 is starting: 4003cee44c6ff44e061b4622993537dead9df838dadd75324a88dece33eb3355
+23:46:08.448 16.06 INFO  [tc.postgres:13] - Container postgres:13 started in PT2.434761S
+23:46:08.448 16.06 INFO  [tc.postgres:13] - Container is started (JDBC URL: jdbc:postgresql://localhost:63654/test?loggerLevel=OFF)
+23:46:08.716 16.06 DEBUG [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] - Performing dependency injection for test class ru.aston.controller.UserControllerTest
+23:46:08.778 16.06 INFO  [ru.aston.controller.UserControllerTest] - Starting UserControllerTest using Java 24.0.1 with PID 24020 (started by Nelly in D:\Java\2.Project\SpringEducationalProject)
+23:46:08.779 16.06 DEBUG [ru.aston.controller.UserControllerTest] - Running with Spring Boot v3.5.0, Spring v6.2.7
+23:46:08.779 16.06 INFO  [ru.aston.controller.UserControllerTest] - No active profile set, falling back to 1 default profile: "default"
+23:46:09.001 16.06 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:46:09.012 16.06 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+23:46:09.342 16.06 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port 0 (http)
+23:46:09.369 16.06 INFO  [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-auto-1"]
+23:46:09.372 16.06 INFO  [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+23:46:09.372 16.06 INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.41]
+23:46:09.468 16.06 INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+23:46:09.468 16.06 INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 687 ms
+23:46:09.593 16.06 INFO  [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+23:46:09.596 16.06 INFO  [org.hibernate.cache.internal.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+23:46:09.606 16.06 INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+23:46:09.607 16.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Starting...
+23:46:09.627 16.06 INFO  [com.zaxxer.hikari.pool.HikariPool] - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@2c0b5493
+23:46:09.627 16.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Start completed.
+23:46:09.637 16.06 INFO  [org.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 13.21
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+23:46:09.637 16.06 DEBUG [org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry] - addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@3dc29da3) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@a1c507f)
+23:46:09.637 16.06 DEBUG [org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry] - addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@b7695b) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@f26279c)
+23:46:09.679 16.06 DEBUG [org.hibernate.SQL] - 
+    create table users (
+        id integer not null,
+        age integer not null,
+        created_at timestamp(6) not null,
+        email varchar(255) not null,
+        name varchar(255) not null,
+        primary key (id)
+    )
+23:46:09.684 16.06 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:46:09.722 16.06 WARN  [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:46:09.736 16.06 INFO  [org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean] - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+23:46:09.849 16.06 INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring TestDispatcherServlet ''
+23:46:09.849 16.06 INFO  [org.springframework.test.web.servlet.TestDispatcherServlet] - Initializing Servlet ''
+23:46:09.849 16.06 DEBUG [org.springframework.test.web.servlet.TestDispatcherServlet] - Detected StandardServletMultipartResolver
+23:46:09.849 16.06 DEBUG [org.springframework.test.web.servlet.TestDispatcherServlet] - Detected AcceptHeaderLocaleResolver
+23:46:09.849 16.06 DEBUG [org.springframework.test.web.servlet.TestDispatcherServlet] - Detected FixedThemeResolver
+23:46:09.850 16.06 DEBUG [org.springframework.test.web.servlet.TestDispatcherServlet] - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@e42b45d
+23:46:09.850 16.06 DEBUG [org.springframework.test.web.servlet.TestDispatcherServlet] - Detected org.springframework.web.servlet.support.SessionFlashMapManager@45cf935
+23:46:09.851 16.06 DEBUG [org.springframework.test.web.servlet.TestDispatcherServlet] - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+23:46:09.851 16.06 INFO  [org.springframework.test.web.servlet.TestDispatcherServlet] - Completed initialization in 2 ms
+23:46:09.891 16.06 INFO  [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-auto-1"]
+23:46:09.924 16.06 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port 63663 (http) with context path '/'
+23:46:09.927 16.06 INFO  [ru.aston.controller.UserControllerTest] - Started UserControllerTest in 1.209 seconds (process running for 19.051)
+23:46:09.928 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 15, missCount = 2, failureCount = 0]
+23:46:09.933 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 16, missCount = 2, failureCount = 0]
+23:46:09.935 16.06 DEBUG [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener] - Before test method: class [UserControllerTest], method [createUser_whenUserExists_returnsCreatedUser], class annotated with @DirtiesContext [true] with mode [AFTER_CLASS], method annotated with @DirtiesContext [false] with mode [null]
+23:46:09.936 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 17, missCount = 2, failureCount = 0]
+23:46:09.936 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 18, missCount = 2, failureCount = 0]
+23:46:09.940 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 19, missCount = 2, failureCount = 0]
+23:46:10.284 16.06 DEBUG [org.hibernate.SQL] - 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.age,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name 
+    from
+        users u1_0
+23:46:10.318 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 20, missCount = 2, failureCount = 0]
+23:46:10.584 16.06 INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:46:10.584 16.06 INFO  [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+23:46:10.585 16.06 INFO  [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+23:46:10.656 16.06 TRACE [ru.aston.service.impl.UserServiceImpl] - createUser() UserDTO  = User: id = 105; name = testCreate; email = create@test.tt; age = 105; createdAt = 16 июня 2025 23:46:10.
+23:46:10.662 16.06 TRACE [ru.aston.service.impl.UserServiceImpl] - createUser() = User: id = 105; name = testCreate; email = create@test.tt; age = 105; createdAt = 16 июня 2025 23:46:10.
+23:46:10.680 16.06 DEBUG [org.hibernate.SQL] - 
+    select
+        u1_0.id,
+        u1_0.age,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+23:46:10.715 16.06 DEBUG [org.hibernate.SQL] - 
+    /* insert for
+        ru.aston.entity.User */insert 
+    into
+        users (age, created_at, email, name, id) 
+    values
+        (?, ?, ?, ?, ?)
+23:46:10.770 16.06 TRACE [ru.aston.service.impl.UserServiceImpl] - createUser() = User: id = 105; name = testCreate; email = create@test.tt; age = 105; createdAt = 16 июня 2025 23:46:10.
+23:46:10.771 16.06 DEBUG [org.hibernate.SQL] - 
+    select
+        u1_0.id,
+        u1_0.age,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+23:46:10.785 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 21, missCount = 2, failureCount = 0]
+23:46:10.786 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 22, missCount = 2, failureCount = 0]
+23:46:10.787 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 23, missCount = 2, failureCount = 0]
+23:46:10.787 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 24, missCount = 2, failureCount = 0]
+23:46:10.787 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 25, missCount = 2, failureCount = 0]
+23:46:10.787 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 26, missCount = 2, failureCount = 0]
+23:46:10.788 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 27, missCount = 2, failureCount = 0]
+23:46:10.788 16.06 DEBUG [org.springframework.test.context.support.DirtiesContextTestExecutionListener] - After test method: class [UserControllerTest], method [createUser_whenUserExists_returnsCreatedUser], class annotated with @DirtiesContext [true] with mode [AFTER_CLASS], method annotated with @DirtiesContext [false] with mode [null]
+23:46:10.790 16.06 DEBUG [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] - Performing dependency injection for test class ru.aston.controller.UserControllerTest
+23:46:10.790 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 28, missCount = 2, failureCount = 0]
+23:46:10.791 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 29, missCount = 2, failureCount = 0]
+23:46:10.792 16.06 DEBUG [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener] - Before test method: class [UserControllerTest], method [findAllUsers_whenUserExists_returnsAllUsers], class annotated with @DirtiesContext [true] with mode [AFTER_CLASS], method annotated with @DirtiesContext [false] with mode [null]
+23:46:10.792 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 30, missCount = 2, failureCount = 0]
+23:46:10.792 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 31, missCount = 2, failureCount = 0]
+23:46:10.793 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 32, missCount = 2, failureCount = 0]
+23:46:10.796 16.06 DEBUG [org.hibernate.SQL] - 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.age,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name 
+    from
+        users u1_0
+23:46:10.806 16.06 DEBUG [org.hibernate.SQL] - 
+    /* delete for ru.aston.entity.User */delete 
+    from
+        users 
+    where
+        id=?
+23:46:10.813 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 33, missCount = 2, failureCount = 0]
+23:46:10.813 16.06 TRACE [ru.aston.service.impl.UserServiceImpl] - createUser() = User: id = 1; name = One; email = find_1@test.tt; age = 1; createdAt = 16 июня 2025 23:46:10.
+23:46:10.814 16.06 DEBUG [org.hibernate.SQL] - 
+    select
+        u1_0.id,
+        u1_0.age,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+23:46:10.817 16.06 DEBUG [org.hibernate.SQL] - 
+    /* insert for
+        ru.aston.entity.User */insert 
+    into
+        users (age, created_at, email, name, id) 
+    values
+        (?, ?, ?, ?, ?)
+23:46:10.820 16.06 TRACE [ru.aston.service.impl.UserServiceImpl] - createUser() = User: id = 2; name = Two; email = find_2@test.tt; age = 2; createdAt = 16 июня 2025 23:46:10.
+23:46:10.821 16.06 DEBUG [org.hibernate.SQL] - 
+    select
+        u1_0.id,
+        u1_0.age,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+23:46:10.823 16.06 DEBUG [org.hibernate.SQL] - 
+    /* insert for
+        ru.aston.entity.User */insert 
+    into
+        users (age, created_at, email, name, id) 
+    values
+        (?, ?, ?, ?, ?)
+23:46:10.827 16.06 TRACE [ru.aston.service.impl.UserServiceImpl] - createUser() = User: id = 3; name = Three; email = find_3@test.tt; age = 3; createdAt = 16 июня 2025 23:46:10.
+23:46:10.828 16.06 DEBUG [org.hibernate.SQL] - 
+    select
+        u1_0.id,
+        u1_0.age,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+23:46:10.831 16.06 DEBUG [org.hibernate.SQL] - 
+    /* insert for
+        ru.aston.entity.User */insert 
+    into
+        users (age, created_at, email, name, id) 
+    values
+        (?, ?, ?, ?, ?)
+23:46:10.845 16.06 TRACE [ru.aston.service.impl.UserServiceImpl] - findAll()
+23:46:10.845 16.06 TRACE [ru.aston.service.impl.UserServiceImpl] - findAllUsers()
+23:46:10.851 16.06 DEBUG [org.hibernate.SQL] - 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.age,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name 
+    from
+        users u1_0
+23:46:10.867 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 34, missCount = 2, failureCount = 0]
+23:46:10.867 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 35, missCount = 2, failureCount = 0]
+23:46:10.867 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 36, missCount = 2, failureCount = 0]
+23:46:10.867 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 37, missCount = 2, failureCount = 0]
+23:46:10.868 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 38, missCount = 2, failureCount = 0]
+23:46:10.868 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 39, missCount = 2, failureCount = 0]
+23:46:10.869 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 40, missCount = 2, failureCount = 0]
+23:46:10.869 16.06 DEBUG [org.springframework.test.context.support.DirtiesContextTestExecutionListener] - After test method: class [UserControllerTest], method [findAllUsers_whenUserExists_returnsAllUsers], class annotated with @DirtiesContext [true] with mode [AFTER_CLASS], method annotated with @DirtiesContext [false] with mode [null]
+23:46:10.870 16.06 DEBUG [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] - Performing dependency injection for test class ru.aston.controller.UserControllerTest
+23:46:10.871 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 41, missCount = 2, failureCount = 0]
+23:46:10.872 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 42, missCount = 2, failureCount = 0]
+23:46:10.873 16.06 DEBUG [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener] - Before test method: class [UserControllerTest], method [deleteUser_whenUserExists_returnTrue], class annotated with @DirtiesContext [true] with mode [AFTER_CLASS], method annotated with @DirtiesContext [false] with mode [null]
+23:46:10.873 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 43, missCount = 2, failureCount = 0]
+23:46:10.874 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 44, missCount = 2, failureCount = 0]
+23:46:10.874 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 45, missCount = 2, failureCount = 0]
+23:46:10.877 16.06 DEBUG [org.hibernate.SQL] - 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.age,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name 
+    from
+        users u1_0
+23:46:10.880 16.06 DEBUG [org.hibernate.SQL] - 
+    /* delete for ru.aston.entity.User */delete 
+    from
+        users 
+    where
+        id=?
+23:46:10.881 16.06 DEBUG [org.hibernate.SQL] - 
+    /* delete for ru.aston.entity.User */delete 
+    from
+        users 
+    where
+        id=?
+23:46:10.883 16.06 DEBUG [org.hibernate.SQL] - 
+    /* delete for ru.aston.entity.User */delete 
+    from
+        users 
+    where
+        id=?
+23:46:10.885 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 46, missCount = 2, failureCount = 0]
+23:46:10.886 16.06 TRACE [ru.aston.service.impl.UserServiceImpl] - createUser() = User: id = 105; name = testCreate; email = create@test.tt; age = 105; createdAt = 16 июня 2025 23:46:10.
+23:46:10.886 16.06 DEBUG [org.hibernate.SQL] - 
+    select
+        u1_0.id,
+        u1_0.age,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+23:46:10.888 16.06 DEBUG [org.hibernate.SQL] - 
+    /* insert for
+        ru.aston.entity.User */insert 
+    into
+        users (age, created_at, email, name, id) 
+    values
+        (?, ?, ?, ?, ?)
+23:46:10.895 16.06 TRACE [ru.aston.service.impl.UserServiceImpl] - deleteUser() id = 105
+23:46:10.895 16.06 TRACE [ru.aston.service.impl.UserServiceImpl] - deleteUserById() id = 105
+23:46:10.952 16.06 DEBUG [org.hibernate.SQL] - 
+    /* dynamic native SQL query */ DELETE 
+    FROM
+        users 
+    WHERE
+        id = ?
+23:46:10.960 16.06 TRACE [ru.aston.service.impl.UserServiceImpl] - getUserById() id = 105
+23:46:10.962 16.06 DEBUG [org.hibernate.SQL] - 
+    select
+        u1_0.id,
+        u1_0.age,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+23:46:10.966 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 47, missCount = 2, failureCount = 0]
+23:46:10.966 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 48, missCount = 2, failureCount = 0]
+23:46:10.966 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 49, missCount = 2, failureCount = 0]
+23:46:10.967 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 50, missCount = 2, failureCount = 0]
+23:46:10.967 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 51, missCount = 2, failureCount = 0]
+23:46:10.967 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 52, missCount = 2, failureCount = 0]
+23:46:10.967 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 53, missCount = 2, failureCount = 0]
+23:46:10.967 16.06 DEBUG [org.springframework.test.context.support.DirtiesContextTestExecutionListener] - After test method: class [UserControllerTest], method [deleteUser_whenUserExists_returnTrue], class annotated with @DirtiesContext [true] with mode [AFTER_CLASS], method annotated with @DirtiesContext [false] with mode [null]
+23:46:10.968 16.06 DEBUG [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] - Performing dependency injection for test class ru.aston.controller.UserControllerTest
+23:46:10.968 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 54, missCount = 2, failureCount = 0]
+23:46:10.969 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 55, missCount = 2, failureCount = 0]
+23:46:10.970 16.06 DEBUG [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener] - Before test method: class [UserControllerTest], method [getUserById_whenUserExists_returnsUser], class annotated with @DirtiesContext [true] with mode [AFTER_CLASS], method annotated with @DirtiesContext [false] with mode [null]
+23:46:10.970 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 56, missCount = 2, failureCount = 0]
+23:46:10.971 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 57, missCount = 2, failureCount = 0]
+23:46:10.971 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 58, missCount = 2, failureCount = 0]
+23:46:10.974 16.06 DEBUG [org.hibernate.SQL] - 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.age,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name 
+    from
+        users u1_0
+23:46:10.977 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 59, missCount = 2, failureCount = 0]
+23:46:10.977 16.06 TRACE [ru.aston.service.impl.UserServiceImpl] - createUser() = User: id = 105; name = testCreate; email = create@test.tt; age = 105; createdAt = 16 июня 2025 23:46:10.
+23:46:10.979 16.06 DEBUG [org.hibernate.SQL] - 
+    select
+        u1_0.id,
+        u1_0.age,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+23:46:10.980 16.06 DEBUG [org.hibernate.SQL] - 
+    /* insert for
+        ru.aston.entity.User */insert 
+    into
+        users (age, created_at, email, name, id) 
+    values
+        (?, ?, ?, ?, ?)
+23:46:10.986 16.06 TRACE [ru.aston.service.impl.UserServiceImpl] - getUserById() id = 105
+23:46:10.986 16.06 TRACE [ru.aston.service.impl.UserServiceImpl] - getUserById() id = 105
+23:46:10.986 16.06 DEBUG [org.hibernate.SQL] - 
+    select
+        u1_0.id,
+        u1_0.age,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+23:46:10.993 16.06 TRACE [ru.aston.service.impl.UserServiceImpl] - getUserById() id = 105
+23:46:10.993 16.06 DEBUG [org.hibernate.SQL] - 
+    select
+        u1_0.id,
+        u1_0.age,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+23:46:10.998 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 60, missCount = 2, failureCount = 0]
+23:46:10.998 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 61, missCount = 2, failureCount = 0]
+23:46:10.998 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 62, missCount = 2, failureCount = 0]
+23:46:10.999 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 63, missCount = 2, failureCount = 0]
+23:46:10.999 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 64, missCount = 2, failureCount = 0]
+23:46:10.999 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 65, missCount = 2, failureCount = 0]
+23:46:10.999 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 66, missCount = 2, failureCount = 0]
+23:46:10.999 16.06 DEBUG [org.springframework.test.context.support.DirtiesContextTestExecutionListener] - After test method: class [UserControllerTest], method [getUserById_whenUserExists_returnsUser], class annotated with @DirtiesContext [true] with mode [AFTER_CLASS], method annotated with @DirtiesContext [false] with mode [null]
+23:46:11.000 16.06 DEBUG [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] - Performing dependency injection for test class ru.aston.controller.UserControllerTest
+23:46:11.000 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 67, missCount = 2, failureCount = 0]
+23:46:11.001 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 68, missCount = 2, failureCount = 0]
+23:46:11.001 16.06 DEBUG [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener] - Before test method: class [UserControllerTest], method [updateUser_whenUserExists_returnTrue], class annotated with @DirtiesContext [true] with mode [AFTER_CLASS], method annotated with @DirtiesContext [false] with mode [null]
+23:46:11.002 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 69, missCount = 2, failureCount = 0]
+23:46:11.002 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 70, missCount = 2, failureCount = 0]
+23:46:11.003 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 71, missCount = 2, failureCount = 0]
+23:46:11.005 16.06 DEBUG [org.hibernate.SQL] - 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.age,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name 
+    from
+        users u1_0
+23:46:11.007 16.06 DEBUG [org.hibernate.SQL] - 
+    /* delete for ru.aston.entity.User */delete 
+    from
+        users 
+    where
+        id=?
+23:46:11.010 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 72, missCount = 2, failureCount = 0]
+23:46:11.011 16.06 TRACE [ru.aston.service.impl.UserServiceImpl] - createUser() = User: id = 105; name = testCreate; email = create@test.tt; age = 105; createdAt = 16 июня 2025 23:46:11.
+23:46:11.011 16.06 DEBUG [org.hibernate.SQL] - 
+    select
+        u1_0.id,
+        u1_0.age,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+23:46:11.014 16.06 DEBUG [org.hibernate.SQL] - 
+    /* insert for
+        ru.aston.entity.User */insert 
+    into
+        users (age, created_at, email, name, id) 
+    values
+        (?, ?, ?, ?, ?)
+23:46:11.020 16.06 TRACE [ru.aston.service.impl.UserServiceImpl] - updateUser() id = 105, userDTO = User: id = 100; name = testUpdate; email = update@test.tt; age = 100; createdAt = 16 июня 2025 23:46:11.
+23:46:11.021 16.06 TRACE [ru.aston.service.impl.UserServiceImpl] - updateUser() id = 105 with User: id = 100; name = testUpdate; email = update@test.tt; age = 100; createdAt = 16 июня 2025 23:46:11.
+23:46:11.023 16.06 DEBUG [org.hibernate.SQL] - 
+    /* dynamic native SQL query */ UPDATE
+        users 
+    SET
+        id = ?,
+        name = ?,
+        age = ?,
+        email = ?,
+        created_at = ? 
+    WHERE
+        id = ?
+23:46:11.029 16.06 TRACE [ru.aston.service.impl.UserServiceImpl] - findAllUsers()
+23:46:11.031 16.06 DEBUG [org.hibernate.SQL] - 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.age,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name 
+    from
+        users u1_0
+23:46:11.034 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 73, missCount = 2, failureCount = 0]
+23:46:11.034 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 74, missCount = 2, failureCount = 0]
+23:46:11.034 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 75, missCount = 2, failureCount = 0]
+23:46:11.035 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 76, missCount = 2, failureCount = 0]
+23:46:11.035 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 77, missCount = 2, failureCount = 0]
+23:46:11.035 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 78, missCount = 2, failureCount = 0]
+23:46:11.036 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 79, missCount = 2, failureCount = 0]
+23:46:11.036 16.06 DEBUG [org.springframework.test.context.support.DirtiesContextTestExecutionListener] - After test method: class [UserControllerTest], method [updateUser_whenUserExists_returnTrue], class annotated with @DirtiesContext [true] with mode [AFTER_CLASS], method annotated with @DirtiesContext [false] with mode [null]
+23:46:11.036 16.06 DEBUG [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] - Performing dependency injection for test class ru.aston.controller.UserControllerTest
+23:46:11.036 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 80, missCount = 2, failureCount = 0]
+23:46:11.037 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 81, missCount = 2, failureCount = 0]
+23:46:11.038 16.06 DEBUG [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener] - Before test method: class [UserControllerTest], method [deleteUser_whenUserNotExists_returnFalse], class annotated with @DirtiesContext [true] with mode [AFTER_CLASS], method annotated with @DirtiesContext [false] with mode [null]
+23:46:11.038 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 82, missCount = 2, failureCount = 0]
+23:46:11.038 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 83, missCount = 2, failureCount = 0]
+23:46:11.039 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 84, missCount = 2, failureCount = 0]
+23:46:11.041 16.06 DEBUG [org.hibernate.SQL] - 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.age,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name 
+    from
+        users u1_0
+23:46:11.044 16.06 DEBUG [org.hibernate.SQL] - 
+    /* delete for ru.aston.entity.User */delete 
+    from
+        users 
+    where
+        id=?
+23:46:11.047 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 85, missCount = 2, failureCount = 0]
+23:46:11.050 16.06 TRACE [ru.aston.service.impl.UserServiceImpl] - deleteUser() id = 1
+23:46:11.050 16.06 TRACE [ru.aston.service.impl.UserServiceImpl] - deleteUserById() id = 1
+23:46:11.051 16.06 DEBUG [org.hibernate.SQL] - 
+    /* dynamic native SQL query */ DELETE 
+    FROM
+        users 
+    WHERE
+        id = ?
+23:46:11.056 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 86, missCount = 2, failureCount = 0]
+23:46:11.057 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 87, missCount = 2, failureCount = 0]
+23:46:11.057 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 88, missCount = 2, failureCount = 0]
+23:46:11.058 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 89, missCount = 2, failureCount = 0]
+23:46:11.058 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 90, missCount = 2, failureCount = 0]
+23:46:11.058 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 91, missCount = 2, failureCount = 0]
+23:46:11.058 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 92, missCount = 2, failureCount = 0]
+23:46:11.058 16.06 DEBUG [org.springframework.test.context.support.DirtiesContextTestExecutionListener] - After test method: class [UserControllerTest], method [deleteUser_whenUserNotExists_returnFalse], class annotated with @DirtiesContext [true] with mode [AFTER_CLASS], method annotated with @DirtiesContext [false] with mode [null]
+23:46:11.059 16.06 DEBUG [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] - Performing dependency injection for test class ru.aston.controller.UserControllerTest
+23:46:11.059 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 93, missCount = 2, failureCount = 0]
+23:46:11.060 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 94, missCount = 2, failureCount = 0]
+23:46:11.061 16.06 DEBUG [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener] - Before test method: class [UserControllerTest], method [updateUser_whenUserNotExists_returnFalse], class annotated with @DirtiesContext [true] with mode [AFTER_CLASS], method annotated with @DirtiesContext [false] with mode [null]
+23:46:11.061 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 95, missCount = 2, failureCount = 0]
+23:46:11.062 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 96, missCount = 2, failureCount = 0]
+23:46:11.062 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 97, missCount = 2, failureCount = 0]
+23:46:11.065 16.06 DEBUG [org.hibernate.SQL] - 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.age,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name 
+    from
+        users u1_0
+23:46:11.069 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 98, missCount = 2, failureCount = 0]
+23:46:11.069 16.06 TRACE [ru.aston.service.impl.UserServiceImpl] - createUser() = User: id = 105; name = testCreate; email = create@test.tt; age = 105; createdAt = 16 июня 2025 23:46:11.
+23:46:11.070 16.06 DEBUG [org.hibernate.SQL] - 
+    select
+        u1_0.id,
+        u1_0.age,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+23:46:11.072 16.06 DEBUG [org.hibernate.SQL] - 
+    /* insert for
+        ru.aston.entity.User */insert 
+    into
+        users (age, created_at, email, name, id) 
+    values
+        (?, ?, ?, ?, ?)
+23:46:11.078 16.06 TRACE [ru.aston.service.impl.UserServiceImpl] - updateUser() id = 106, userDTO = User: id = 100; name = testUpdate; email = update@test.tt; age = 100; createdAt = 16 июня 2025 23:46:11.
+23:46:11.078 16.06 TRACE [ru.aston.service.impl.UserServiceImpl] - updateUser() id = 106 with User: id = 100; name = testUpdate; email = update@test.tt; age = 100; createdAt = 16 июня 2025 23:46:11.
+23:46:11.079 16.06 DEBUG [org.hibernate.SQL] - 
+    /* dynamic native SQL query */ UPDATE
+        users 
+    SET
+        id = ?,
+        name = ?,
+        age = ?,
+        email = ?,
+        created_at = ? 
+    WHERE
+        id = ?
+23:46:11.083 16.06 TRACE [ru.aston.service.impl.UserServiceImpl] - findAllUsers()
+23:46:11.085 16.06 DEBUG [org.hibernate.SQL] - 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.age,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name 
+    from
+        users u1_0
+23:46:11.089 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 99, missCount = 2, failureCount = 0]
+23:46:11.090 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 100, missCount = 2, failureCount = 0]
+23:46:11.090 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 101, missCount = 2, failureCount = 0]
+23:46:11.090 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 102, missCount = 2, failureCount = 0]
+23:46:11.090 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 103, missCount = 2, failureCount = 0]
+23:46:11.091 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 104, missCount = 2, failureCount = 0]
+23:46:11.091 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 105, missCount = 2, failureCount = 0]
+23:46:11.091 16.06 DEBUG [org.springframework.test.context.support.DirtiesContextTestExecutionListener] - After test method: class [UserControllerTest], method [updateUser_whenUserNotExists_returnFalse], class annotated with @DirtiesContext [true] with mode [AFTER_CLASS], method annotated with @DirtiesContext [false] with mode [null]
+23:46:11.524 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 106, missCount = 2, failureCount = 0]
+23:46:11.525 16.06 DEBUG [org.springframework.test.context.cache] - Spring test ApplicationContext cache statistics: [DefaultContextCache@76098160 size = 2, maxSize = 32, parentContextCount = 0, hitCount = 107, missCount = 2, failureCount = 0]
+23:46:11.526 16.06 DEBUG [org.springframework.test.context.support.DirtiesContextTestExecutionListener] - After test class: class [UserControllerTest], class annotated with @DirtiesContext [true] with mode [AFTER_CLASS]
+23:46:11.529 16.06 INFO  [org.springframework.boot.web.embedded.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+23:46:11.530 16.06 INFO  [org.apache.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-auto-1-63663"]
+23:46:11.543 16.06 INFO  [org.springframework.boot.web.embedded.tomcat.GracefulShutdown] - Graceful shutdown complete
+23:46:11.544 16.06 INFO  [org.apache.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-auto-1"]
+23:46:11.548 16.06 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:46:11.551 16.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Shutdown initiated...
+23:46:11.555 16.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Shutdown completed.
+23:46:11.571 16.06 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:46:11.572 16.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+23:46:11.581 16.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.

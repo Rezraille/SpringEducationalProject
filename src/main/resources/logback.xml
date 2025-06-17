@@ -56,7 +56,7 @@
     <logger name="org.mockito" level="DEBUG"/>
 
     <!-- Application packages -->
-    <logger name="ru.aston.service.impl" level="TRACE"/>
-    <logger name="ru.aston.controller" level="TRACE"/>
+    <logger name="ru.aston.service.impl" level="INFO"/>
+    <logger name="ru.aston.controller" level="INFO"/>
     <logger name="ru.aston.dao" level="INFO"/>
 </configuration>
