@@ -1,11 +1,13 @@
 package ru.aston.controller;
 
 
+import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.*;
+import org.springframework.web.client.HttpClientErrorException;
 import ru.aston.dao.UserDao;
 import ru.aston.model.UserDTO;
 import ru.aston.service.UserService;
@@ -164,6 +166,31 @@ public class UserControllerTest extends BaseIntegrationTest {
         assertEquals(users.get(1), userTwo);
         assertEquals(users.get(2), userThree);
     }
+
+    @Test
+    public void getUserById_whenBadRequest() {
+        Assert.assertThrows(HttpClientErrorException.BadRequest.class, () -> restTemplate.getForEntity(
+                String.format("http://localhost:%d/api/users/read/id/%d", port, -1),
+                UserDTO.class));
+    }
+
+    @Test
+    public void deleteUserById_whenBadRequest() {
+        Assert.assertThrows(HttpClientErrorException.BadRequest.class, () -> restTemplate.exchange(
+                String.format("http://localhost:%d/api/users/delete/id/%d", port, -1),
+                HttpMethod.DELETE,
+                null,
+                Boolean.class));
+    }
+
+    @Test
+    public void getUserById_whenNotExists() {
+        Assert.assertThrows(HttpClientErrorException.NotFound.class, () -> restTemplate.getForEntity(
+                String.format("http://localhost:%d/api/users/read/id/%d", port, 1),
+                UserDTO.class));
+    }
+
+
 
     private LocalDateTime timeNow()
     {
