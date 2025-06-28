@@ -43,9 +43,9 @@ bin/
 !**/src/test/**/bin/
 
 ### Other ###
-.log
 HELP.md
 mvnw.cmd
 mvnw
 .gitattributes
 .mvn
+*.log
