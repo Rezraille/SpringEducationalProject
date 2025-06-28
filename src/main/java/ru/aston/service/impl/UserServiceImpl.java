@@ -33,6 +33,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public Optional<UserDTO> getUserById(Integer id) {
         logger.info("getUserById() id = {}", id);
+
         UserDTO userDTOFromDB = null;
         Optional<User> userOptional = userDao.findById(id);
         if (userOptional.isPresent()) {
@@ -44,6 +45,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public Optional<UserDTO> createUser(UserDTO userDto) {
         logger.info("createUser() = {}", userDto);
+
         User entity = User.builder().
                 id(userDto.id()).
                 name(userDto.name()).
@@ -62,6 +64,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public boolean updateUser(final UserDTO newUser, int oldUserId) {
         logger.info("updateUser() id = {} with {}", oldUserId, newUser);
+
         int sumOfUpdate = userDao.updateUserAndReturnCount(
                 newUser.id(), newUser.name(), newUser.age(), newUser.email(), newUser.createdAt(), oldUserId
         );
@@ -71,6 +74,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public boolean deleteUserById(final Integer id) {
         logger.info("deleteUserById() id = {}", id);
+
         Optional<User> user = userDao.findById(id);
         if (user.isEmpty())
         {
@@ -88,6 +92,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<UserDTO> findAllUsers() {
         logger.info("findAllUsers()");
+
         List<UserDTO> users = new ArrayList<>();
         users = userDao.findAll().stream()
                 .map(entity -> convertToDTO(entity))

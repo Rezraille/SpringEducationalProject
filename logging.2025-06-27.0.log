@@ -1,0 +1,1270 @@
+12:42:59.721 27.06 INFO  [org.hibernate.validator.internal.util.Version] - HV000001: Hibernate Validator 8.0.2.Final
+12:42:59.928 27.06 INFO  [ru.aston.SpringEducationalProjectApplication] - Starting SpringEducationalProjectApplication using Java 24.0.1 with PID 15276 (D:\Java\2.Project\SpringEducationalProject\target\classes started by Nelly in D:\Java\2.Project\SpringEducationalProject)
+12:42:59.931 27.06 INFO  [ru.aston.SpringEducationalProjectApplication] - No active profile set, falling back to 1 default profile: "default"
+12:43:04.214 27.06 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12:43:04.403 27.06 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 155 ms. Found 1 JPA repository interface.
+12:43:06.051 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port 8181 (http)
+12:43:06.094 27.06 INFO  [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8181"]
+12:43:06.099 27.06 INFO  [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+12:43:06.100 27.06 INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.41]
+12:43:06.299 27.06 INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+12:43:06.299 27.06 INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 6150 ms
+12:43:06.848 27.06 INFO  [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+12:43:07.015 27.06 INFO  [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.6.15.Final
+12:43:07.128 27.06 INFO  [org.hibernate.cache.internal.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+12:43:08.395 27.06 INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+12:43:08.492 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+12:43:09.237 27.06 INFO  [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@628962e5
+12:43:09.243 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+12:43:09.571 27.06 INFO  [org.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+12:43:09.597 27.06 DEBUG [org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry] - addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@53e28097) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@6e794f53)
+12:43:09.597 27.06 DEBUG [org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry] - addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@75f4d8a8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@69ba72da)
+12:43:16.218 27.06 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12:43:17.155 27.06 INFO  [org.springframework.data.jpa.repository.query.QueryEnhancerFactory] - Hibernate is in classpath; If applicable, HQL parser will be used.
+12:43:17.785 27.06 WARN  [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12:43:19.388 27.06 INFO  [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8181"]
+12:43:19.443 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port 8181 (http) with context path '/'
+12:43:19.474 27.06 INFO  [ru.aston.SpringEducationalProjectApplication] - Started SpringEducationalProjectApplication in 21.385 seconds (process running for 28.309)
+12:50:33.822 27.06 INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:50:33.823 27.06 INFO  [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+12:50:33.827 27.06 INFO  [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 4 ms
+12:50:36.692 27.06 INFO  [org.springdoc.api.AbstractOpenApiResource] - Init duration for springdoc-openapi is: 891 ms
+12:52:04.922 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+12:52:04.949 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.GracefulShutdown] - Graceful shutdown complete
+12:52:04.961 27.06 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+12:52:04.967 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+12:52:04.983 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+12:52:23.932 27.06 INFO  [org.hibernate.validator.internal.util.Version] - HV000001: Hibernate Validator 8.0.2.Final
+12:52:24.174 27.06 INFO  [ru.aston.SpringEducationalProjectApplication] - Starting SpringEducationalProjectApplication using Java 24.0.1 with PID 14632 (D:\Java\2.Project\SpringEducationalProject\target\classes started by Nelly in D:\Java\2.Project\SpringEducationalProject)
+12:52:24.178 27.06 INFO  [ru.aston.SpringEducationalProjectApplication] - No active profile set, falling back to 1 default profile: "default"
+12:52:30.881 27.06 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12:52:31.091 27.06 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 170 ms. Found 1 JPA repository interface.
+12:52:32.797 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port 8181 (http)
+12:52:32.845 27.06 INFO  [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8181"]
+12:52:32.851 27.06 INFO  [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+12:52:32.852 27.06 INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.41]
+12:52:33.117 27.06 INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+12:52:33.118 27.06 INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 8667 ms
+12:52:33.720 27.06 INFO  [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+12:52:33.901 27.06 INFO  [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.6.15.Final
+12:52:34.017 27.06 INFO  [org.hibernate.cache.internal.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+12:52:34.999 27.06 INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+12:52:35.103 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+12:52:35.715 27.06 INFO  [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6ec3d8e4
+12:52:35.721 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+12:52:35.957 27.06 INFO  [org.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+12:52:35.981 27.06 DEBUG [org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry] - addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@194037f9) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@2335aef2)
+12:52:35.982 27.06 DEBUG [org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry] - addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@17003497) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2f038d3c)
+12:52:38.836 27.06 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12:52:39.615 27.06 INFO  [org.springframework.data.jpa.repository.query.QueryEnhancerFactory] - Hibernate is in classpath; If applicable, HQL parser will be used.
+12:52:40.110 27.06 WARN  [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12:52:41.861 27.06 INFO  [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8181"]
+12:52:41.923 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port 8181 (http) with context path '/'
+12:52:41.954 27.06 INFO  [ru.aston.SpringEducationalProjectApplication] - Started SpringEducationalProjectApplication in 20.062 seconds (process running for 23.831)
+12:52:43.135 27.06 INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:52:43.135 27.06 INFO  [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+12:52:43.139 27.06 INFO  [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 3 ms
+12:52:45.754 27.06 INFO  [org.springdoc.api.AbstractOpenApiResource] - Init duration for springdoc-openapi is: 853 ms
+13:16:43.676 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+13:16:43.706 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.GracefulShutdown] - Graceful shutdown complete
+13:16:43.727 27.06 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+13:16:43.734 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+13:16:43.743 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+15:29:03.479 27.06 INFO  [org.hibernate.validator.internal.util.Version] - HV000001: Hibernate Validator 8.0.2.Final
+15:29:03.655 27.06 INFO  [ru.aston.SpringEducationalProjectApplication] - Starting SpringEducationalProjectApplication using Java 24.0.1 with PID 23748 (D:\Java\2.Project\SpringEducationalProject\target\classes started by Nelly in D:\Java\2.Project\SpringEducationalProject)
+15:29:03.657 27.06 INFO  [ru.aston.SpringEducationalProjectApplication] - No active profile set, falling back to 1 default profile: "default"
+15:29:07.114 27.06 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:29:07.353 27.06 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 197 ms. Found 1 JPA repository interface.
+15:29:09.831 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port 8181 (http)
+15:29:09.877 27.06 INFO  [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8181"]
+15:29:09.881 27.06 INFO  [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+15:29:09.882 27.06 INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.41]
+15:29:10.093 27.06 INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+15:29:10.094 27.06 INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 6228 ms
+15:29:10.810 27.06 INFO  [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+15:29:11.043 27.06 INFO  [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.6.15.Final
+15:29:11.175 27.06 INFO  [org.hibernate.cache.internal.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+15:29:12.296 27.06 INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+15:29:12.385 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+15:29:12.860 27.06 INFO  [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3a70575
+15:29:12.867 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+15:29:13.111 27.06 INFO  [org.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+15:29:13.138 27.06 DEBUG [org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry] - addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@732d078d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@58bad46f)
+15:29:13.138 27.06 DEBUG [org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry] - addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7c0e4e4e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@20231384)
+15:29:16.575 27.06 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:29:17.665 27.06 INFO  [org.springframework.data.jpa.repository.query.QueryEnhancerFactory] - Hibernate is in classpath; If applicable, HQL parser will be used.
+15:29:18.250 27.06 WARN  [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:29:20.141 27.06 INFO  [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8181"]
+15:29:20.190 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port 8181 (http) with context path '/'
+15:29:20.218 27.06 INFO  [ru.aston.SpringEducationalProjectApplication] - Started SpringEducationalProjectApplication in 18.191 seconds (process running for 22.708)
+15:31:49.421 27.06 INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:31:49.422 27.06 INFO  [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+15:31:49.427 27.06 INFO  [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 5 ms
+15:31:49.717 27.06 INFO  [ru.aston.service.impl.UserServiceImpl] - createUser() UserDTO  = User: id = 5; name = Name; email = example_1@test.ru; age = 100; createdAt = 21 ноября 2018 11:13:13.
+15:31:49.737 27.06 INFO  [ru.aston.service.impl.UserServiceImpl] - createUser() = User: id = 5; name = Name; email = example_1@test.ru; age = 100; createdAt = 21 ноября 2018 11:13:13.
+15:31:49.920 27.06 DEBUG [org.hibernate.SQL] - 
+    select
+        u1_0.id,
+        u1_0.age,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+15:31:50.158 27.06 DEBUG [org.hibernate.SQL] - 
+    /* update
+        for ru.aston.entity.User */update users 
+    set
+        age=?,
+        created_at=?,
+        email=?,
+        name=? 
+    where
+        id=?
+15:31:50.206 27.06 INFO  [ru.aston.kafka.Producer] - sendMessage() topic = USERS, key = CREATE, message = example_1@test.ru
+15:31:50.323 27.06 INFO  [org.apache.kafka.clients.producer.ProducerConfig] - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = example-1
+	compression.gzip.level = -1
+	compression.lz4.level = 9
+	compression.type = none
+	compression.zstd.level = 3
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+15:31:50.442 27.06 INFO  [org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector] - initializing Kafka metrics collector
+15:31:50.501 27.06 INFO  [org.apache.kafka.clients.producer.KafkaProducer] - [Producer clientId=example-1] Instantiated an idempotent producer.
+15:31:50.657 27.06 INFO  [org.apache.kafka.common.utils.AppInfoParser] - Kafka version: 3.9.1
+15:31:50.658 27.06 INFO  [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId: f745dfdcee2b9851
+15:31:50.658 27.06 INFO  [org.apache.kafka.common.utils.AppInfoParser] - Kafka startTimeMs: 1751027510652
+15:31:53.177 27.06 WARN  [org.apache.kafka.clients.NetworkClient] - [Producer clientId=example-1] The metadata response from the cluster reported a recoverable issue with correlation id 2 : {USERS=LEADER_NOT_AVAILABLE}
+15:31:53.184 27.06 INFO  [org.apache.kafka.clients.Metadata] - [Producer clientId=example-1] Cluster ID: osm0Cu71Tvu_diA1xBDLYg
+15:31:53.214 27.06 INFO  [org.apache.kafka.clients.producer.internals.TransactionManager] - [Producer clientId=example-1] ProducerId set to 2000 with epoch 0
+15:31:53.487 27.06 WARN  [org.apache.kafka.clients.NetworkClient] - [Producer clientId=example-1] The metadata response from the cluster reported a recoverable issue with correlation id 7 : {USERS=LEADER_NOT_AVAILABLE}
+15:31:53.742 27.06 WARN  [org.apache.kafka.clients.NetworkClient] - [Producer clientId=example-1] The metadata response from the cluster reported a recoverable issue with correlation id 8 : {USERS=LEADER_NOT_AVAILABLE}
+15:31:54.235 27.06 WARN  [org.apache.kafka.clients.NetworkClient] - [Producer clientId=example-1] The metadata response from the cluster reported a recoverable issue with correlation id 9 : {USERS=LEADER_NOT_AVAILABLE}
+15:44:07.412 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+15:44:07.438 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.GracefulShutdown] - Graceful shutdown complete
+15:44:07.445 27.06 INFO  [org.apache.kafka.clients.producer.KafkaProducer] - [Producer clientId=example-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+15:44:07.469 27.06 INFO  [org.apache.kafka.common.metrics.Metrics] - Metrics scheduler closed
+15:44:07.470 27.06 INFO  [org.apache.kafka.common.metrics.Metrics] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+15:44:07.470 27.06 INFO  [org.apache.kafka.common.metrics.Metrics] - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+15:44:07.470 27.06 INFO  [org.apache.kafka.common.metrics.Metrics] - Metrics reporters closed
+15:44:07.472 27.06 INFO  [org.apache.kafka.common.utils.AppInfoParser] - App info kafka.producer for example-1 unregistered
+15:44:07.479 27.06 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+15:44:07.485 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+15:44:07.495 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+15:44:25.734 27.06 INFO  [org.hibernate.validator.internal.util.Version] - HV000001: Hibernate Validator 8.0.2.Final
+15:44:25.898 27.06 INFO  [ru.aston.SpringEducationalProjectApplication] - Starting SpringEducationalProjectApplication using Java 24.0.1 with PID 8628 (D:\Java\2.Project\SpringEducationalProject\target\classes started by Nelly in D:\Java\2.Project\SpringEducationalProject)
+15:44:25.901 27.06 INFO  [ru.aston.SpringEducationalProjectApplication] - No active profile set, falling back to 1 default profile: "default"
+15:44:30.274 27.06 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:44:30.475 27.06 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 168 ms. Found 1 JPA repository interface.
+15:44:32.184 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port 8181 (http)
+15:44:32.234 27.06 INFO  [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8181"]
+15:44:32.239 27.06 INFO  [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+15:44:32.240 27.06 INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.41]
+15:44:32.441 27.06 INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+15:44:32.441 27.06 INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 6364 ms
+15:44:33.037 27.06 INFO  [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+15:44:33.203 27.06 INFO  [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.6.15.Final
+15:44:33.307 27.06 INFO  [org.hibernate.cache.internal.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+15:44:34.311 27.06 INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+15:44:34.409 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+15:44:35.016 27.06 INFO  [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@304068
+15:44:35.025 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+15:44:35.690 27.06 INFO  [org.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+15:44:35.751 27.06 DEBUG [org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry] - addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@7791ff50) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@46de118b)
+15:44:35.753 27.06 DEBUG [org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry] - addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@55682482) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@10cb050)
+15:44:39.987 27.06 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:44:41.204 27.06 INFO  [org.springframework.data.jpa.repository.query.QueryEnhancerFactory] - Hibernate is in classpath; If applicable, HQL parser will be used.
+15:44:41.880 27.06 WARN  [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:44:44.239 27.06 INFO  [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8181"]
+15:44:44.309 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port 8181 (http) with context path '/'
+15:44:44.346 27.06 INFO  [ru.aston.SpringEducationalProjectApplication] - Started SpringEducationalProjectApplication in 20.402 seconds (process running for 25.017)
+15:45:11.858 27.06 INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:45:11.859 27.06 INFO  [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+15:45:11.861 27.06 INFO  [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 2 ms
+15:45:14.456 27.06 INFO  [org.springdoc.api.AbstractOpenApiResource] - Init duration for springdoc-openapi is: 1171 ms
+15:46:11.823 27.06 INFO  [ru.aston.service.impl.UserServiceImpl] - createUser() UserDTO  = User: id = 10; name = Name; email = example_1@test.ru; age = 100; createdAt = 21 ноября 2018 11:13:13.
+15:46:11.847 27.06 INFO  [ru.aston.service.impl.UserServiceImpl] - createUser() = User: id = 10; name = Name; email = example_1@test.ru; age = 100; createdAt = 21 ноября 2018 11:13:13.
+15:46:11.968 27.06 DEBUG [org.hibernate.SQL] - 
+    select
+        u1_0.id,
+        u1_0.age,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+15:46:12.165 27.06 DEBUG [org.hibernate.SQL] - 
+    /* insert for
+        ru.aston.entity.User */insert 
+    into
+        users (age, created_at, email, name, id) 
+    values
+        (?, ?, ?, ?, ?)
+15:46:12.207 27.06 INFO  [ru.aston.kafka.Producer] - sendMessage() topic = USERS, key = CREATE, message = example_1@test.ru
+15:46:12.335 27.06 INFO  [org.apache.kafka.clients.producer.ProducerConfig] - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = example-1
+	compression.gzip.level = -1
+	compression.lz4.level = 9
+	compression.type = none
+	compression.zstd.level = 3
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+15:46:12.475 27.06 INFO  [org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector] - initializing Kafka metrics collector
+15:46:12.543 27.06 INFO  [org.apache.kafka.clients.producer.KafkaProducer] - [Producer clientId=example-1] Instantiated an idempotent producer.
+15:46:12.707 27.06 INFO  [org.apache.kafka.common.utils.AppInfoParser] - Kafka version: 3.9.1
+15:46:12.707 27.06 INFO  [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId: f745dfdcee2b9851
+15:46:12.707 27.06 INFO  [org.apache.kafka.common.utils.AppInfoParser] - Kafka startTimeMs: 1751028372702
+15:46:14.181 27.06 INFO  [org.apache.kafka.clients.Metadata] - [Producer clientId=example-1] Cluster ID: osm0Cu71Tvu_diA1xBDLYg
+15:46:14.182 27.06 INFO  [org.apache.kafka.clients.producer.internals.TransactionManager] - [Producer clientId=example-1] ProducerId set to 2001 with epoch 0
+15:49:54.353 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+15:49:54.380 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.GracefulShutdown] - Graceful shutdown complete
+15:49:54.387 27.06 INFO  [org.apache.kafka.clients.producer.KafkaProducer] - [Producer clientId=example-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+15:49:54.422 27.06 INFO  [org.apache.kafka.common.metrics.Metrics] - Metrics scheduler closed
+15:49:54.423 27.06 INFO  [org.apache.kafka.common.metrics.Metrics] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+15:49:54.423 27.06 INFO  [org.apache.kafka.common.metrics.Metrics] - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+15:49:54.424 27.06 INFO  [org.apache.kafka.common.metrics.Metrics] - Metrics reporters closed
+15:49:54.452 27.06 INFO  [org.apache.kafka.common.utils.AppInfoParser] - App info kafka.producer for example-1 unregistered
+15:49:54.462 27.06 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+15:49:54.471 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+15:49:54.483 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+15:50:12.891 27.06 INFO  [org.hibernate.validator.internal.util.Version] - HV000001: Hibernate Validator 8.0.2.Final
+15:50:13.079 27.06 INFO  [ru.aston.SpringEducationalProjectApplication] - Starting SpringEducationalProjectApplication using Java 24.0.1 with PID 14248 (D:\Java\2.Project\SpringEducationalProject\target\classes started by Nelly in D:\Java\2.Project\SpringEducationalProject)
+15:50:13.082 27.06 INFO  [ru.aston.SpringEducationalProjectApplication] - No active profile set, falling back to 1 default profile: "default"
+15:50:17.278 27.06 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:50:17.464 27.06 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 156 ms. Found 1 JPA repository interface.
+15:50:19.144 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port 8181 (http)
+15:50:19.206 27.06 INFO  [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8181"]
+15:50:19.211 27.06 INFO  [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+15:50:19.211 27.06 INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.41]
+15:50:19.434 27.06 INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+15:50:19.434 27.06 INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 6140 ms
+15:50:20.120 27.06 INFO  [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+15:50:20.299 27.06 INFO  [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.6.15.Final
+15:50:20.418 27.06 INFO  [org.hibernate.cache.internal.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+15:50:21.523 27.06 INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+15:50:21.655 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+15:50:22.179 27.06 INFO  [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@47797401
+15:50:22.186 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+15:50:22.503 27.06 INFO  [org.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+15:50:22.545 27.06 DEBUG [org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry] - addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@6fc0e448) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@60194904)
+15:50:22.545 27.06 DEBUG [org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry] - addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4db6348b) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7742a276)
+15:50:25.919 27.06 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:50:26.817 27.06 INFO  [org.springframework.data.jpa.repository.query.QueryEnhancerFactory] - Hibernate is in classpath; If applicable, HQL parser will be used.
+15:50:27.548 27.06 WARN  [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:50:29.616 27.06 INFO  [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8181"]
+15:50:29.672 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port 8181 (http) with context path '/'
+15:50:29.714 27.06 INFO  [ru.aston.SpringEducationalProjectApplication] - Started SpringEducationalProjectApplication in 18.882 seconds (process running for 23.956)
+15:56:21.423 27.06 INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:56:21.424 27.06 INFO  [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+15:56:21.429 27.06 INFO  [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 5 ms
+15:56:23.903 27.06 INFO  [org.springdoc.api.AbstractOpenApiResource] - Init duration for springdoc-openapi is: 927 ms
+15:56:38.751 27.06 INFO  [ru.aston.service.impl.UserServiceImpl] - createUser() UserDTO  = User: id = 5; name = Name; email = example_1@test.ru; age = 100; createdAt = 21 ноября 2018 11:13:13.
+15:56:38.770 27.06 INFO  [ru.aston.service.impl.UserServiceImpl] - createUser() = User: id = 5; name = Name; email = example_1@test.ru; age = 100; createdAt = 21 ноября 2018 11:13:13.
+15:56:38.888 27.06 DEBUG [org.hibernate.SQL] - 
+    select
+        u1_0.id,
+        u1_0.age,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+15:56:39.063 27.06 INFO  [ru.aston.kafka.Producer] - sendMessage() topic = USERS, key = CREATE, message = example_1@test.ru
+15:56:39.169 27.06 INFO  [org.apache.kafka.clients.producer.ProducerConfig] - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = example-1
+	compression.gzip.level = -1
+	compression.lz4.level = 9
+	compression.type = none
+	compression.zstd.level = 3
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+15:56:39.292 27.06 INFO  [org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector] - initializing Kafka metrics collector
+15:56:39.346 27.06 INFO  [org.apache.kafka.clients.producer.KafkaProducer] - [Producer clientId=example-1] Instantiated an idempotent producer.
+15:56:39.489 27.06 INFO  [org.apache.kafka.common.utils.AppInfoParser] - Kafka version: 3.9.1
+15:56:39.489 27.06 INFO  [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId: f745dfdcee2b9851
+15:56:39.490 27.06 INFO  [org.apache.kafka.common.utils.AppInfoParser] - Kafka startTimeMs: 1751028999485
+15:56:40.986 27.06 INFO  [org.apache.kafka.clients.Metadata] - [Producer clientId=example-1] Cluster ID: osm0Cu71Tvu_diA1xBDLYg
+15:56:40.989 27.06 INFO  [org.apache.kafka.clients.producer.internals.TransactionManager] - [Producer clientId=example-1] ProducerId set to 2002 with epoch 0
+15:59:04.627 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+15:59:04.651 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.GracefulShutdown] - Graceful shutdown complete
+15:59:04.657 27.06 INFO  [org.apache.kafka.clients.producer.KafkaProducer] - [Producer clientId=example-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+15:59:04.687 27.06 INFO  [org.apache.kafka.common.metrics.Metrics] - Metrics scheduler closed
+15:59:04.687 27.06 INFO  [org.apache.kafka.common.metrics.Metrics] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+15:59:04.688 27.06 INFO  [org.apache.kafka.common.metrics.Metrics] - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+15:59:04.688 27.06 INFO  [org.apache.kafka.common.metrics.Metrics] - Metrics reporters closed
+15:59:04.689 27.06 INFO  [org.apache.kafka.common.utils.AppInfoParser] - App info kafka.producer for example-1 unregistered
+15:59:04.696 27.06 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+15:59:04.702 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+15:59:04.720 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+15:59:13.942 27.06 INFO  [org.hibernate.validator.internal.util.Version] - HV000001: Hibernate Validator 8.0.2.Final
+15:59:14.181 27.06 INFO  [ru.aston.SpringEducationalProjectApplication] - Starting SpringEducationalProjectApplication using Java 24.0.1 with PID 24548 (D:\Java\2.Project\SpringEducationalProject\target\classes started by Nelly in D:\Java\2.Project\SpringEducationalProject)
+15:59:14.184 27.06 INFO  [ru.aston.SpringEducationalProjectApplication] - No active profile set, falling back to 1 default profile: "default"
+15:59:19.133 27.06 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:59:19.348 27.06 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 183 ms. Found 1 JPA repository interface.
+15:59:21.170 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port 8181 (http)
+15:59:21.216 27.06 INFO  [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8181"]
+15:59:21.220 27.06 INFO  [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+15:59:21.221 27.06 INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.41]
+15:59:21.424 27.06 INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+15:59:21.425 27.06 INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 6984 ms
+15:59:21.989 27.06 INFO  [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+15:59:22.152 27.06 INFO  [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.6.15.Final
+15:59:22.273 27.06 INFO  [org.hibernate.cache.internal.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+15:59:24.264 27.06 INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+15:59:24.408 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+15:59:24.875 27.06 INFO  [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@61ad30f6
+15:59:24.880 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+15:59:25.157 27.06 INFO  [org.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+15:59:25.200 27.06 DEBUG [org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry] - addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@60844992) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@2ee456c7)
+15:59:25.200 27.06 DEBUG [org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry] - addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6df37f7a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@39514976)
+15:59:28.158 27.06 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:59:29.063 27.06 INFO  [org.springframework.data.jpa.repository.query.QueryEnhancerFactory] - Hibernate is in classpath; If applicable, HQL parser will be used.
+15:59:29.582 27.06 WARN  [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:59:31.561 27.06 INFO  [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8181"]
+15:59:31.614 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port 8181 (http) with context path '/'
+15:59:31.644 27.06 INFO  [ru.aston.SpringEducationalProjectApplication] - Started SpringEducationalProjectApplication in 19.402 seconds (process running for 23.376)
+17:31:18.060 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+17:31:18.303 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.GracefulShutdown] - Graceful shutdown complete
+17:31:18.404 27.06 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+17:31:18.479 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+17:31:18.510 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+17:31:41.763 27.06 INFO  [org.hibernate.validator.internal.util.Version] - HV000001: Hibernate Validator 8.0.2.Final
+17:31:42.033 27.06 INFO  [ru.aston.SpringEducationalProjectApplication] - Starting SpringEducationalProjectApplication using Java 24.0.1 with PID 16728 (D:\Java\2.Project\SpringEducationalProject\target\classes started by Nelly in D:\Java\2.Project\SpringEducationalProject)
+17:31:42.036 27.06 INFO  [ru.aston.SpringEducationalProjectApplication] - No active profile set, falling back to 1 default profile: "default"
+17:31:45.779 27.06 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+17:31:45.955 27.06 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 139 ms. Found 1 JPA repository interface.
+17:31:49.425 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port 8181 (http)
+17:31:49.498 27.06 INFO  [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8181"]
+17:31:49.506 27.06 INFO  [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+17:31:49.507 27.06 INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.41]
+17:31:49.917 27.06 INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+17:31:49.918 27.06 INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 7682 ms
+17:31:51.591 27.06 INFO  [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+17:31:51.779 27.06 INFO  [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.6.15.Final
+17:31:51.884 27.06 INFO  [org.hibernate.cache.internal.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+17:31:52.949 27.06 INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+17:31:53.069 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+17:31:53.768 27.06 INFO  [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@46a388cc
+17:31:53.774 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+17:31:54.130 27.06 INFO  [org.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+17:31:54.172 27.06 DEBUG [org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry] - addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@28519bfb) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@15914bb5)
+17:31:54.173 27.06 DEBUG [org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry] - addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7b332b23) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@66a472b9)
+17:31:57.672 27.06 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+17:31:58.450 27.06 INFO  [org.springframework.data.jpa.repository.query.QueryEnhancerFactory] - Hibernate is in classpath; If applicable, HQL parser will be used.
+17:31:59.218 27.06 WARN  [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+17:32:01.126 27.06 INFO  [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8181"]
+17:32:01.181 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port 8181 (http) with context path '/'
+17:32:01.223 27.06 INFO  [ru.aston.SpringEducationalProjectApplication] - Started SpringEducationalProjectApplication in 21.583 seconds (process running for 27.398)
+17:33:54.801 27.06 INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:33:54.801 27.06 INFO  [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+17:33:54.805 27.06 INFO  [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 4 ms
+17:33:55.081 27.06 ERROR [ru.aston.exeption.GlobalExceptionHandler] - Ошибка. Ошибка валидации. 
+jakarta.validation.ConstraintViolationException: getUserById.id: должно быть больше или равно 0
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:170)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at ru.aston.controller.UserController$$SpringCGLIB$$0.getUserById(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+18:02:20.789 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+18:02:20.828 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.GracefulShutdown] - Graceful shutdown complete
+18:02:20.849 27.06 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+18:02:20.858 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+18:02:20.881 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+18:24:05.623 27.06 INFO  [org.hibernate.validator.internal.util.Version] - HV000001: Hibernate Validator 8.0.2.Final
+18:24:05.936 27.06 INFO  [ru.aston.SpringEducationalProjectApplication] - Starting SpringEducationalProjectApplication using Java 24.0.1 with PID 23052 (D:\Java\2.Project\SpringEducationalProject\target\classes started by Nelly in D:\Java\2.Project\SpringEducationalProject)
+18:24:05.939 27.06 INFO  [ru.aston.SpringEducationalProjectApplication] - No active profile set, falling back to 1 default profile: "default"
+18:24:11.795 27.06 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:24:12.016 27.06 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 184 ms. Found 1 JPA repository interface.
+18:24:14.220 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port 8181 (http)
+18:24:14.282 27.06 INFO  [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8181"]
+18:24:14.287 27.06 INFO  [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+18:24:14.288 27.06 INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.41]
+18:24:15.259 27.06 INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+18:24:15.260 27.06 INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 9054 ms
+18:24:16.278 27.06 INFO  [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:24:16.557 27.06 INFO  [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.6.15.Final
+18:24:16.663 27.06 INFO  [org.hibernate.cache.internal.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+18:24:17.787 27.06 INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+18:24:17.890 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+18:24:18.401 27.06 INFO  [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5d96d434
+18:24:18.407 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+18:24:18.748 27.06 INFO  [org.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+18:24:18.777 27.06 DEBUG [org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry] - addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@58bad46f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@7c0e4e4e)
+18:24:18.777 27.06 DEBUG [org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry] - addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@20231384) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3ba97962)
+18:24:22.351 27.06 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:24:23.409 27.06 INFO  [org.springframework.data.jpa.repository.query.QueryEnhancerFactory] - Hibernate is in classpath; If applicable, HQL parser will be used.
+18:24:24.446 27.06 WARN  [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:24:27.188 27.06 INFO  [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8181"]
+18:24:27.245 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port 8181 (http) with context path '/'
+18:24:27.278 27.06 INFO  [ru.aston.SpringEducationalProjectApplication] - Started SpringEducationalProjectApplication in 24.117 seconds (process running for 28.522)
+18:25:18.752 27.06 INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:25:18.752 27.06 INFO  [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+18:25:18.755 27.06 INFO  [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 2 ms
+18:25:19.414 27.06 INFO  [ru.aston.service.impl.UserServiceImpl] - createUser() UserDTO  = User: id = 11; name = Name; email = example_1@test.ru; age = 100; createdAt = 21 ноября 2018 11:13:13.
+18:25:19.748 27.06 INFO  [ru.aston.service.impl.UserServiceImpl] - createUser() = User: id = 11; name = Name; email = example_1@test.ru; age = 100; createdAt = 21 ноября 2018 11:13:13.
+18:25:19.857 27.06 DEBUG [org.hibernate.SQL] - 
+    select
+        u1_0.id,
+        u1_0.age,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+18:25:20.013 27.06 DEBUG [org.hibernate.SQL] - 
+    /* insert for
+        ru.aston.entity.User */insert 
+    into
+        users (age, created_at, email, name, id) 
+    values
+        (?, ?, ?, ?, ?)
+18:25:20.062 27.06 INFO  [ru.aston.kafka.Producer] - sendMessage() topic = USERS, key = CREATE, message = example_1@test.ru
+18:25:20.166 27.06 INFO  [org.apache.kafka.clients.producer.ProducerConfig] - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = example-1
+	compression.gzip.level = -1
+	compression.lz4.level = 9
+	compression.type = none
+	compression.zstd.level = 3
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+18:25:20.293 27.06 INFO  [org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector] - initializing Kafka metrics collector
+18:25:20.348 27.06 INFO  [org.apache.kafka.clients.producer.KafkaProducer] - [Producer clientId=example-1] Instantiated an idempotent producer.
+18:25:20.494 27.06 INFO  [org.apache.kafka.common.utils.AppInfoParser] - Kafka version: 3.9.1
+18:25:20.495 27.06 INFO  [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId: f745dfdcee2b9851
+18:25:20.495 27.06 INFO  [org.apache.kafka.common.utils.AppInfoParser] - Kafka startTimeMs: 1751037920489
+18:25:22.088 27.06 INFO  [org.apache.kafka.clients.Metadata] - [Producer clientId=example-1] Cluster ID: osm0Cu71Tvu_diA1xBDLYg
+18:25:22.089 27.06 INFO  [org.apache.kafka.clients.producer.internals.TransactionManager] - [Producer clientId=example-1] ProducerId set to 2003 with epoch 0
+18:27:33.787 27.06 INFO  [ru.aston.service.impl.UserServiceImpl] - deleteUser() id = 11
+18:27:33.816 27.06 INFO  [ru.aston.service.impl.UserServiceImpl] - deleteUserById() id = 11
+18:27:33.835 27.06 DEBUG [org.hibernate.SQL] - 
+    select
+        u1_0.id,
+        u1_0.age,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+18:27:33.989 27.06 DEBUG [org.hibernate.SQL] - 
+    /* dynamic native SQL query */ DELETE 
+    FROM
+        users 
+    WHERE
+        id = ?
+18:27:34.009 27.06 INFO  [ru.aston.kafka.Producer] - sendMessage() topic = USERS, key = DELETE, message = example_1@test.ru
+18:27:34.023 27.06 ERROR [ru.aston.exeption.GlobalExceptionHandler] - Ошибка. Операция отменена. 
+org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Can not write a boolean value, expecting field name (context: Object)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:494)
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:126)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:345)
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:263)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.hateoas.server.mvc.RepresentationModelProcessorHandlerMethodReturnValueHandler.handleReturnValue(RepresentationModelProcessorHandlerMethodReturnValueHandler.java:134)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: Can not write a boolean value, expecting field name (context: Object) (through reference chain: org.springframework.hateoas.EntityModel["content"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:400)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:359)
+	at com.fasterxml.jackson.databind.ser.std.StdSerializer.wrapAndThrow(StdSerializer.java:324)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:765)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:183)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:503)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:342)
+	at com.fasterxml.jackson.databind.ObjectWriter$Prefetch.serialize(ObjectWriter.java:1587)
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:1061)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:485)
+	... 50 common frames omitted
+Caused by: com.fasterxml.jackson.core.JsonGenerationException: Can not write a boolean value, expecting field name (context: Object)
+	at com.fasterxml.jackson.core.JsonGenerator._constructWriteException(JsonGenerator.java:2935)
+	at com.fasterxml.jackson.core.JsonGenerator._reportError(JsonGenerator.java:2919)
+	at com.fasterxml.jackson.core.json.JsonGeneratorImpl._reportCantWriteValueExpectName(JsonGeneratorImpl.java:275)
+	at com.fasterxml.jackson.core.json.UTF8JsonGenerator._verifyValueWrite(UTF8JsonGenerator.java:1184)
+	at com.fasterxml.jackson.core.json.UTF8JsonGenerator.writeBoolean(UTF8JsonGenerator.java:1132)
+	at com.fasterxml.jackson.databind.ser.std.BooleanSerializer.serialize(BooleanSerializer.java:69)
+	at org.springframework.hateoas.EntityModel$MapSuppressingUnwrappingSerializer.serialize(EntityModel.java:246)
+	at com.fasterxml.jackson.databind.ser.impl.UnwrappingBeanPropertyWriter.serializeAsField(UnwrappingBeanPropertyWriter.java:126)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:760)
+	... 56 common frames omitted
+18:53:28.353 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+18:53:28.377 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.GracefulShutdown] - Graceful shutdown complete
+18:53:28.384 27.06 INFO  [org.apache.kafka.clients.producer.KafkaProducer] - [Producer clientId=example-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+18:53:28.409 27.06 INFO  [org.apache.kafka.common.metrics.Metrics] - Metrics scheduler closed
+18:53:28.410 27.06 INFO  [org.apache.kafka.common.metrics.Metrics] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+18:53:28.410 27.06 INFO  [org.apache.kafka.common.metrics.Metrics] - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+18:53:28.410 27.06 INFO  [org.apache.kafka.common.metrics.Metrics] - Metrics reporters closed
+18:53:28.412 27.06 INFO  [org.apache.kafka.common.utils.AppInfoParser] - App info kafka.producer for example-1 unregistered
+18:53:28.419 27.06 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+18:53:28.425 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+18:53:28.439 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+18:53:50.555 27.06 INFO  [org.hibernate.validator.internal.util.Version] - HV000001: Hibernate Validator 8.0.2.Final
+18:53:50.765 27.06 INFO  [ru.aston.SpringEducationalProjectApplication] - Starting SpringEducationalProjectApplication using Java 24.0.1 with PID 10480 (D:\Java\2.Project\SpringEducationalProject\target\classes started by Nelly in D:\Java\2.Project\SpringEducationalProject)
+18:53:50.767 27.06 INFO  [ru.aston.SpringEducationalProjectApplication] - No active profile set, falling back to 1 default profile: "default"
+18:53:53.916 27.06 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18:53:54.081 27.06 INFO  [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 135 ms. Found 1 JPA repository interface.
+18:53:55.681 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port 8181 (http)
+18:53:55.736 27.06 INFO  [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8181"]
+18:53:55.742 27.06 INFO  [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+18:53:55.743 27.06 INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.41]
+18:53:55.937 27.06 INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+18:53:55.938 27.06 INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 4995 ms
+18:53:56.470 27.06 INFO  [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:53:56.635 27.06 INFO  [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.6.15.Final
+18:53:56.737 27.06 INFO  [org.hibernate.cache.internal.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+18:53:57.673 27.06 INFO  [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+18:53:57.788 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+18:53:58.301 27.06 INFO  [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2da5fdc
+18:53:58.307 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+18:53:58.562 27.06 INFO  [org.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+18:53:58.593 27.06 DEBUG [org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry] - addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@42503099) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@39dda56f)
+18:53:58.594 27.06 DEBUG [org.hibernate.type.descriptor.sql.spi.DdlTypeRegistry] - addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@60844992) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2ee456c7)
+18:54:01.558 27.06 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:54:02.319 27.06 INFO  [org.springframework.data.jpa.repository.query.QueryEnhancerFactory] - Hibernate is in classpath; If applicable, HQL parser will be used.
+18:54:03.111 27.06 WARN  [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:54:04.836 27.06 INFO  [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8181"]
+18:54:04.881 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port 8181 (http) with context path '/'
+18:54:04.906 27.06 INFO  [ru.aston.SpringEducationalProjectApplication] - Started SpringEducationalProjectApplication in 16.406 seconds (process running for 21.576)
+18:54:21.944 27.06 INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:54:21.945 27.06 INFO  [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+18:54:21.949 27.06 INFO  [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 4 ms
+18:54:22.252 27.06 INFO  [ru.aston.service.impl.UserServiceImpl] - findAll()
+18:54:22.252 27.06 INFO  [ru.aston.service.impl.UserServiceImpl] - findAllUsers()
+18:54:22.809 27.06 DEBUG [org.hibernate.SQL] - 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.age,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name 
+    from
+        users u1_0
+18:55:37.472 27.06 INFO  [ru.aston.service.impl.UserServiceImpl] - deleteUser() id = 6
+18:55:37.478 27.06 INFO  [ru.aston.service.impl.UserServiceImpl] - deleteUserById() id = 6
+18:55:37.509 27.06 DEBUG [org.hibernate.SQL] - 
+    select
+        u1_0.id,
+        u1_0.age,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+18:55:37.662 27.06 DEBUG [org.hibernate.SQL] - 
+    /* dynamic native SQL query */ DELETE 
+    FROM
+        users 
+    WHERE
+        id = ?
+18:55:37.689 27.06 INFO  [ru.aston.kafka.Producer] - sendMessage() topic = USERS, key = DELETE, message = test@mail.ru
+18:55:37.825 27.06 INFO  [org.apache.kafka.clients.producer.ProducerConfig] - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = example-1
+	compression.gzip.level = -1
+	compression.lz4.level = 9
+	compression.type = none
+	compression.zstd.level = 3
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+18:55:37.981 27.06 INFO  [org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector] - initializing Kafka metrics collector
+18:55:38.049 27.06 INFO  [org.apache.kafka.clients.producer.KafkaProducer] - [Producer clientId=example-1] Instantiated an idempotent producer.
+18:55:38.232 27.06 INFO  [org.apache.kafka.common.utils.AppInfoParser] - Kafka version: 3.9.1
+18:55:38.233 27.06 INFO  [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId: f745dfdcee2b9851
+18:55:38.233 27.06 INFO  [org.apache.kafka.common.utils.AppInfoParser] - Kafka startTimeMs: 1751039738228
+18:55:39.802 27.06 INFO  [org.apache.kafka.clients.Metadata] - [Producer clientId=example-1] Cluster ID: osm0Cu71Tvu_diA1xBDLYg
+18:55:39.805 27.06 INFO  [org.apache.kafka.clients.producer.internals.TransactionManager] - [Producer clientId=example-1] ProducerId set to 2004 with epoch 0
+18:55:39.883 27.06 ERROR [ru.aston.exeption.GlobalExceptionHandler] - Ошибка. Операция отменена. 
+org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Can not write a boolean value, expecting field name (context: Object)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:494)
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:126)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:345)
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:263)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.hateoas.server.mvc.RepresentationModelProcessorHandlerMethodReturnValueHandler.handleReturnValue(RepresentationModelProcessorHandlerMethodReturnValueHandler.java:134)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: Can not write a boolean value, expecting field name (context: Object) (through reference chain: org.springframework.hateoas.EntityModel["content"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:400)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:359)
+	at com.fasterxml.jackson.databind.ser.std.StdSerializer.wrapAndThrow(StdSerializer.java:324)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:765)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:183)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:503)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:342)
+	at com.fasterxml.jackson.databind.ObjectWriter$Prefetch.serialize(ObjectWriter.java:1587)
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:1061)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:485)
+	... 50 common frames omitted
+Caused by: com.fasterxml.jackson.core.JsonGenerationException: Can not write a boolean value, expecting field name (context: Object)
+	at com.fasterxml.jackson.core.JsonGenerator._constructWriteException(JsonGenerator.java:2935)
+	at com.fasterxml.jackson.core.JsonGenerator._reportError(JsonGenerator.java:2919)
+	at com.fasterxml.jackson.core.json.JsonGeneratorImpl._reportCantWriteValueExpectName(JsonGeneratorImpl.java:275)
+	at com.fasterxml.jackson.core.json.UTF8JsonGenerator._verifyValueWrite(UTF8JsonGenerator.java:1184)
+	at com.fasterxml.jackson.core.json.UTF8JsonGenerator.writeBoolean(UTF8JsonGenerator.java:1132)
+	at com.fasterxml.jackson.databind.ser.std.BooleanSerializer.serialize(BooleanSerializer.java:69)
+	at org.springframework.hateoas.EntityModel$MapSuppressingUnwrappingSerializer.serialize(EntityModel.java:246)
+	at com.fasterxml.jackson.databind.ser.impl.UnwrappingBeanPropertyWriter.serializeAsField(UnwrappingBeanPropertyWriter.java:126)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:760)
+	... 56 common frames omitted
+21:48:36.921 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+21:48:37.086 27.06 INFO  [org.springframework.boot.web.embedded.tomcat.GracefulShutdown] - Graceful shutdown complete
+21:48:37.205 27.06 INFO  [org.apache.kafka.clients.producer.KafkaProducer] - [Producer clientId=example-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+21:48:37.253 27.06 INFO  [org.apache.kafka.common.metrics.Metrics] - Metrics scheduler closed
+21:48:37.254 27.06 INFO  [org.apache.kafka.common.metrics.Metrics] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+21:48:37.255 27.06 INFO  [org.apache.kafka.common.metrics.Metrics] - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+21:48:37.256 27.06 INFO  [org.apache.kafka.common.metrics.Metrics] - Metrics reporters closed
+21:48:37.262 27.06 INFO  [org.apache.kafka.common.utils.AppInfoParser] - App info kafka.producer for example-1 unregistered
+21:48:37.356 27.06 INFO  [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+21:48:37.381 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+21:48:37.858 27.06 INFO  [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.

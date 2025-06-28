@@ -1,88 +1,156 @@
 package ru.aston.controller;
 
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-import ru.aston.controller.util.Util;
+import java.time.LocalDateTime;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.ExampleObject;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.PositiveOrZero;
+import org.springframework.hateoas.CollectionModel;
+import org.springframework.validation.annotation.Validated;
+
+import ru.aston.exeption.GlobalExceptionHandler;
 import ru.aston.model.UserDTO;
 import ru.aston.service.UserService;
 import ru.aston.service.impl.UserServiceImpl;
 
-import java.util.List;
-import java.util.Optional;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.tags.Tag;
+
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
+
+import org.springframework.hateoas.Link;
+import org.springframework.hateoas.EntityModel;
 
 
+@Validated
 @RestController
+@Tag(name = "Users", description = "CRUD операции над пользователями.")
 @RequestMapping("api/users")
+@ApiResponse(
+        responseCode = "200",
+        description = "Операция успешна",
+        content = @Content(
+                mediaType = "application/json",
+                schema = @Schema(implementation = UserController.class),
+                examples = @ExampleObject(
+                        value = """
+                            {
+                                "timestamp": "2023-11-21T11:13:13.285",
+                                "status": 200,
+                                "message": "OK",
+                                "path": "/api/{resource}/{action}"
+                            }
+                            """
+                )
+        )
+)
 public class UserController {
     private static final Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
     private final UserService userService;
-    private final Util util;
 
-    public UserController(UserService userService, Util util) {
+    public UserController(UserService userService) {
         this.userService = userService;
-        this.util = util;
     }
 
+
+    @Operation(summary = "Чтение.", description = "Получить пользователя из таблицы Users.")
     @GetMapping("read/id/{id}")
-    public ResponseEntity<UserDTO> getUserById(@PathVariable Integer id) {
+    public ResponseEntity<EntityModel<UserDTO>> getUserById(
+            @PositiveOrZero
+            @PathVariable("id") @Parameter(description = "Идентификатор пользователя") Integer id
+    ) {
         logger.info("getUserById() id = {}", id);
-        if (util.isPositiveNumber(id)) {
-            Optional<UserDTO> optionalUserDTO = userService.getUserById(id);
-            return optionalUserDTO.isPresent() ? ResponseEntity.ok(optionalUserDTO.get()) : ResponseEntity.notFound().build();
-        } else {
-            logger.error("Ошибка неправильный id = {}", id);
-            return ResponseEntity.badRequest().build();
-        }
 
+        Optional<UserDTO> optionalUser = userService.getUserById(id);
+        EntityModel<UserDTO> model = toEntityModel(optionalUser.get());
+        return optionalUser.isPresent() ? ResponseEntity.ok(model) : ResponseEntity.notFound().build();
     }
 
+
+    @Operation(summary = "Добавление.", description = "Добавить пользователя в таблицу Users.")
     @PutMapping("create")
-    public ResponseEntity<UserDTO> createUser(@RequestBody UserDTO userDTO) {
+    public ResponseEntity<EntityModel<UserDTO>> createUser(@Valid @RequestBody UserDTO userDTO) {
         logger.info("createUser() UserDTO  = {}", userDTO);
 
-        if (util.isCorrectUserDTO(userDTO)) {
-            Optional<UserDTO> optionalUserDTO = userService.createUser(userDTO);
-            return optionalUserDTO.isPresent() ? ResponseEntity.ok(optionalUserDTO.get()) : ResponseEntity.notFound().build();
-        } else {
-            logger.error("Ошибка неправильный requestBody {}", userDTO);
-            return ResponseEntity.badRequest().build();
-        }
+        Optional<UserDTO> optionalUser = userService.createUser(userDTO);
+        EntityModel<UserDTO> model = toEntityModel(userDTO);
+        return optionalUser.isPresent() ? ResponseEntity.ok(model) : ResponseEntity.notFound().build();
     }
 
+
+    @Operation(summary = "Обновление.", description = "Обновить пользователя в таблице Users.")
     @PutMapping("update/old-id/{id}")
-    public ResponseEntity<Boolean> updateUser(@PathVariable Integer id, @RequestBody UserDTO userDTO) {
+    public ResponseEntity<EntityModel<Map<String, Boolean>>> updateUser(
+            @PositiveOrZero @PathVariable("id") @Parameter(description = "Идентификатор пользователя") Integer id,
+            @Valid @RequestBody UserDTO userDTO
+    ) {
         logger.info("updateUser() id = {}, userDTO = {}", id, userDTO);
 
-        if (util.isPositiveNumber(id) && util.isCorrectUserDTO(userDTO)) {
-            boolean isUpdate = userService.updateUser(userDTO, id);
-            return ResponseEntity.ok(isUpdate);
-        } else {
-            logger.error("Ошибка id =  {}, userDto = {}", id, userDTO);
-            return ResponseEntity.badRequest().build();
-        }
+        boolean isUpdate = userService.updateUser(userDTO, id);
+        EntityModel<Map<String, Boolean>> model = toEntityModel(isUpdate);
+        return ResponseEntity.ok(model);
     }
 
+
+    @Operation(summary = "Удаление.", description = "Удалить пользователя из таблицы Users.")
     @DeleteMapping("delete/id/{id}")
-    public ResponseEntity<Boolean> deleteUser(@PathVariable Integer id) {
+    public ResponseEntity<EntityModel<Map<String, Boolean>>> deleteUser(@PositiveOrZero @PathVariable("id")
+                                                                        @Parameter(description = "Идентификатор пользователя") Integer id
+    ) {
         logger.info("deleteUser() id = {}", id);
 
-        if (util.isPositiveNumber(id)) {
-            boolean isRemove = userService.deleteUserById(id);
-            return ResponseEntity.ok(isRemove);
-        } else {
-            logger.error("Ошибка неверный id =  {}", id);
-            return ResponseEntity.badRequest().build();
-        }
+        boolean isRemove = userService.deleteUserById(id);
+        EntityModel<Map<String, Boolean>> model = toEntityModel(isRemove);
+        return ResponseEntity.ok(model);
     }
 
+
+    @Operation(summary = "Прочитать всех.", description = "Получить список всех пользователей из таблицы Users.")
     @GetMapping("findAll")
-    public ResponseEntity<List> findAllUsers() {
+    public ResponseEntity<CollectionModel<EntityModel<UserDTO>>> findAllUsers() {
         logger.info("findAll()");
 
-        List<UserDTO> usersDto = userService.findAllUsers();
-        return ResponseEntity.ok(usersDto);
+        List<UserDTO> users = userService.findAllUsers();
+        List<EntityModel<UserDTO>> usersModel = users.stream()
+                .map(user -> toEntityModel(user))
+                .toList();
+        CollectionModel<EntityModel<UserDTO>> models = CollectionModel.of(usersModel);
+        return ResponseEntity.ok(models);
+    }
+
+    private EntityModel<UserDTO> toEntityModel(UserDTO user) {
+        Link[] links = createLinks(user);
+        return EntityModel.of(user, links);
+    }
+
+    private EntityModel<Map<String, Boolean>> toEntityModel(Boolean isHappened) {
+        Map<String, Boolean> response = Map.of("success", isHappened);
+        UserDTO example = new UserDTO(1, "example", "example@mail.com", 11, LocalDateTime.now());
+        Link[] links = createLinks(example);
+        return EntityModel.of(response, links);
+    }
+
+    private Link[] createLinks(UserDTO user) {
+        UserDTO example = new UserDTO(1, "example", "example@mail.com", 11, LocalDateTime.now());
+        Link selfLink = linkTo(methodOn(UserController.class).getUserById(user.id())).withSelfRel();
+        Link createLink = linkTo(methodOn(UserController.class).createUser(example)).withRel("create");
+        Link updateLink = linkTo(methodOn(UserController.class).updateUser(user.id(), example)).withRel("update");
+        Link deleteLink = linkTo(methodOn(UserController.class).deleteUser(user.id())).withRel("delete");
+        Link allEmployeesLink = linkTo(methodOn(UserController.class).findAllUsers()).withRel("all-users");
+        return new Link[]{selfLink, createLink, updateLink, deleteLink, allEmployeesLink};
     }
 }
