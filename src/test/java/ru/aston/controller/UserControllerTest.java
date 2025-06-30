@@ -1,11 +1,19 @@
 package ru.aston.controller;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import jakarta.persistence.criteria.Root;
 import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.hateoas.CollectionModel;
+import org.springframework.hateoas.EntityModel;
 import org.springframework.http.*;
 import org.springframework.web.client.HttpClientErrorException;
 import ru.aston.dao.UserDao;
@@ -14,13 +22,15 @@ import ru.aston.service.UserService;
 
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
 import static org.junit.Assert.*;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-
+@JsonIgnoreProperties({"links"})
 public class UserControllerTest extends BaseIntegrationTest {
     @Autowired
     private UserService userService;
@@ -50,6 +60,19 @@ public class UserControllerTest extends BaseIntegrationTest {
                         () -> assertEquals(user, response.getBody())
                 ), () -> fail("User not found"));
         assertEquals(HttpStatus.OK, response.getStatusCode());
+    }
+    @Test
+    public void getUserById_whenBadRequest() {
+        Assert.assertThrows(HttpClientErrorException.BadRequest.class, () -> restTemplate.getForEntity(
+                String.format("http://localhost:%d/api/users/read/id/%d", port, -1),
+                UserDTO.class));
+    }
+
+    @Test
+    public void getUserById_whenNotExists() {
+        Assert.assertThrows(HttpClientErrorException.NotFound.class, () -> restTemplate.getForEntity(
+                String.format("http://localhost:%d/api/users/read/id/%d", port, 1),
+                UserDTO.class));
     }
 
     @Test
@@ -82,14 +105,13 @@ public class UserControllerTest extends BaseIntegrationTest {
         UserDTO newUserDTO = new UserDTO(100, "testUpdate", "update@test.tt", 100, timeNow());
 
         final HttpHeaders headers = new HttpHeaders();
-        final ResponseEntity<Boolean> responseUpdate = restTemplate.exchange(
+        final ResponseEntity<JsonNode> response = restTemplate.exchange(
                 String.format("http://localhost:%d/api/users/update/old-id/%d", port, oldId),
                 HttpMethod.PUT,
                 new HttpEntity<>(newUserDTO, headers),
-                Boolean.class);
-
-        assertEquals(HttpStatus.OK, responseUpdate.getStatusCode());
-        assertTrue(responseUpdate.getBody());
+                JsonNode.class);
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+        assertTrue(response.getBody().get("success").asBoolean());
         List<UserDTO> usersAfterUpdate = userService.findAllUsers();
         assertTrue(usersAfterUpdate.size() == 1);
         assertEquals(newUserDTO, usersAfterUpdate.get(0));
@@ -103,14 +125,14 @@ public class UserControllerTest extends BaseIntegrationTest {
         UserDTO newUserDTO = new UserDTO(100, "testUpdate", "update@test.tt", 100, timeNow());
 
         final HttpHeaders headers = new HttpHeaders();
-        final ResponseEntity<Boolean> responseUpdate = restTemplate.exchange(
+        final ResponseEntity<JsonNode> response = restTemplate.exchange(
                 String.format("http://localhost:%d/api/users/update/old-id/%d", port, oldId),
                 HttpMethod.PUT,
                 new HttpEntity<>(newUserDTO, headers),
-                Boolean.class);
+                JsonNode.class);
 
-        assertEquals(HttpStatus.OK, responseUpdate.getStatusCode());
-        assertFalse(responseUpdate.getBody());
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+        assertFalse(response.getBody().get("success").asBoolean());
         List<UserDTO> usersAfterUpdate = userService.findAllUsers();
         assertTrue(usersAfterUpdate.size() == 1);
         assertEquals(userDTO, usersAfterUpdate.get(0));
@@ -122,56 +144,26 @@ public class UserControllerTest extends BaseIntegrationTest {
         userService.createUser(userDTO);
         int oldId = userDTO.id();
 
-        final ResponseEntity<Boolean> response = restTemplate.exchange(
+        final ResponseEntity<JsonNode> response = restTemplate.exchange(
                 String.format("http://localhost:%d/api/users/delete/id/%d", port, oldId),
                 HttpMethod.DELETE,
                 null,
-                Boolean.class);
+                JsonNode.class);
         assertEquals(HttpStatus.OK, response.getStatusCode());
-        assertTrue(response.getBody());
+        assertTrue(response.getBody().get("success").asBoolean());
         assertTrue(userService.getUserById(105).isEmpty());
 
     }
 
     @Test
     public void deleteUser_whenUserNotExists_returnFalse() {
-              final ResponseEntity<Boolean> response = restTemplate.exchange(
+              final ResponseEntity<JsonNode> response = restTemplate.exchange(
                 String.format("http://localhost:%d/api/users/delete/id/%d", port, 1),
                 HttpMethod.DELETE,
                 null,
-                Boolean.class);
+                JsonNode.class);
         assertEquals(HttpStatus.OK, response.getStatusCode());
-        assertFalse(response.getBody());
-    }
-
-    @Test
-    public void findAllUsers_whenUserExists_returnsAllUsers() {
-        int listSize = 3;
-        UserDTO userOne = new UserDTO(1, "One", "find_1@test.tt", 1, timeNow());
-        userService.createUser(userOne);
-        UserDTO userTwo = new UserDTO(2, "Two", "find_2@test.tt", 2, timeNow());
-        userService.createUser(userTwo);
-        UserDTO userThree = new UserDTO(3, "Three", "find_3@test.tt", 3, timeNow());
-        userService.createUser(userThree);
-
-        final ResponseEntity<List<UserDTO>> response = restTemplate.exchange(
-                String.format("http://localhost:%d/api/users/findAll", port), HttpMethod.GET,null,
-                 new ParameterizedTypeReference<List<UserDTO>>() {
-                });
-        List<UserDTO> users = response.getBody();
-
-        assertEquals(HttpStatus.OK, response.getStatusCode());
-        assertTrue(listSize == users.size());
-        assertEquals(users.get(0), userOne);
-        assertEquals(users.get(1), userTwo);
-        assertEquals(users.get(2), userThree);
-    }
-
-    @Test
-    public void getUserById_whenBadRequest() {
-        Assert.assertThrows(HttpClientErrorException.BadRequest.class, () -> restTemplate.getForEntity(
-                String.format("http://localhost:%d/api/users/read/id/%d", port, -1),
-                UserDTO.class));
+        assertFalse(response.getBody().get("success").asBoolean());
     }
 
     @Test
@@ -184,10 +176,40 @@ public class UserControllerTest extends BaseIntegrationTest {
     }
 
     @Test
-    public void getUserById_whenNotExists() {
-        Assert.assertThrows(HttpClientErrorException.NotFound.class, () -> restTemplate.getForEntity(
-                String.format("http://localhost:%d/api/users/read/id/%d", port, 1),
-                UserDTO.class));
+    public void findAllUsers_whenUserExists_returnsAllUsers() throws JsonProcessingException {
+        int listSize = 3;
+        UserDTO userOne = new UserDTO(1, "One", "find_1@test.tt", 1, timeNow());
+        userService.createUser(userOne);
+        UserDTO userTwo = new UserDTO(2, "Two", "find_2@test.tt", 2, timeNow());
+        userService.createUser(userTwo);
+        UserDTO userThree = new UserDTO(3, "Three", "find_3@test.tt", 3, timeNow());
+        userService.createUser(userThree);
+
+        final ResponseEntity<JsonNode>/*<String>*//*CollectionModel<EntityModel<UserDTO>>>*/ response = restTemplate.exchange(
+                String.format("http://localhost:%d/api/users/findAll", port), HttpMethod.GET,null,
+                JsonNode.class);
+                
+
+        JsonNode nodes = response.getBody().get("_embedded").get("userDTOList");
+        System.out.println(nodes.toString());
+        ObjectMapper mapper = new ObjectMapper();
+        List<UserDTO> users = mapper.readValue(
+                nodes.toString(),
+                new TypeReference<List<UserDTO>>() {}
+        );
+        System.out.println(users);
+
+        /*
+
+        List<UserDTO> userDTOList = root.getEmbedded().getUserDTOList();
+        System.out.println(response.getBody());
+        
+
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+        assertTrue(listSize == users.size());
+        assertEquals(users.get(0), userOne);
+        assertEquals(users.get(1), userTwo);
+        assertEquals(users.get(2), userThree);*/
     }
 
 

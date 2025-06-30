@@ -6,32 +6,28 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-import io.swagger.v3.oas.annotations.media.Content;
-import io.swagger.v3.oas.annotations.media.ExampleObject;
-import io.swagger.v3.oas.annotations.media.Schema;
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
-import io.swagger.v3.oas.annotations.responses.ApiResponses;
-import jakarta.validation.Valid;
-import jakarta.validation.constraints.PositiveOrZero;
-import org.springframework.hateoas.CollectionModel;
-import org.springframework.validation.annotation.Validated;
-
-import ru.aston.exeption.GlobalExceptionHandler;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import ru.aston.model.UserDTO;
 import ru.aston.service.UserService;
 import ru.aston.service.impl.UserServiceImpl;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.PositiveOrZero;
+import org.springframework.hateoas.CollectionModel;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
-
-import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
-import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
-
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.ExampleObject;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.EntityModel;
 
@@ -143,7 +139,7 @@ public class UserController {
         Link[] links = createLinks(example);
         return EntityModel.of(response, links);
     }
-
+    @JsonIgnoreProperties(ignoreUnknown = true)
     private Link[] createLinks(UserDTO user) {
         UserDTO example = new UserDTO(1, "example", "example@mail.com", 11, LocalDateTime.now());
         Link selfLink = linkTo(methodOn(UserController.class).getUserById(user.id())).withSelfRel();

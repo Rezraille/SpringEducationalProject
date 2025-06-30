@@ -1,6 +1,7 @@
 package ru.aston.model;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.Transient;
 import jakarta.validation.constraints.*;
@@ -9,6 +10,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 
+@JsonIgnoreProperties({"links"})
 @Schema(description = "Сущность пользователя, используемые в слое представления.")
 public record UserDTO(
         @Schema(description = "Идентификатор пользователя", example = "1", minimum = "0", accessMode = Schema.AccessMode.READ_WRITE)
