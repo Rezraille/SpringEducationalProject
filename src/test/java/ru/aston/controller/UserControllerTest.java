@@ -30,7 +30,7 @@ import static org.junit.Assert.*;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-@JsonIgnoreProperties({"links"})
+
 public class UserControllerTest extends BaseIntegrationTest {
     @Autowired
     private UserService userService;
@@ -188,7 +188,7 @@ public class UserControllerTest extends BaseIntegrationTest {
         final ResponseEntity<JsonNode>/*<String>*//*CollectionModel<EntityModel<UserDTO>>>*/ response = restTemplate.exchange(
                 String.format("http://localhost:%d/api/users/findAll", port), HttpMethod.GET,null,
                 JsonNode.class);
-                
+
 
         JsonNode nodes = response.getBody().get("_embedded").get("userDTOList");
         System.out.println(nodes.toString());
