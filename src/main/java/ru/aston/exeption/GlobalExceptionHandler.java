@@ -21,6 +21,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.context.request.WebRequest;
 
 import java.time.LocalDateTime;
+import java.util.NoSuchElementException;
 
 
 @ControllerAdvice
@@ -36,7 +37,7 @@ public class GlobalExceptionHandler {
     ) {}
 
 
-    @ExceptionHandler({EntityNotFoundException.class})
+    @ExceptionHandler({EntityNotFoundException.class, NoSuchElementException.class})
     @ResponseStatus(HttpStatus.NOT_FOUND)
     @ApiResponse(
             responseCode = "404",
@@ -57,7 +58,7 @@ public class GlobalExceptionHandler {
                     )
             )
     )
-    public ResponseEntity<ErrorResponse> handleUserNotFoundException(EntityNotFoundException exception,
+    public ResponseEntity<Object> handleUserNotFoundException(Exception exception,
                                                                      HttpServletRequest request
     ) {
         String path = request.getRequestURI();
@@ -98,7 +99,7 @@ public class GlobalExceptionHandler {
                     )
             )
     )
-    public ResponseEntity<ErrorResponse> handleUserAlreadyExistsException(EntityExistsException exception,
+    public ResponseEntity<Object> handleUserAlreadyExistsException(EntityExistsException exception,
                                                                    HttpServletRequest request
     ) {
         String path = request.getRequestURI();
@@ -199,7 +200,7 @@ public class GlobalExceptionHandler {
 
 
     @ExceptionHandler({RuntimeException.class})
-    @ResponseStatus(HttpStatus.NOT_FOUND)
+    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     @ApiResponse(
             responseCode = "500",
             description = "Ошибка c базой данных",

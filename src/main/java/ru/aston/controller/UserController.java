@@ -48,7 +48,7 @@ import org.springframework.hateoas.EntityModel;
                                 "timestamp": "2023-11-21T11:13:13.285",
                                 "status": 200,
                                 "message": "OK",
-                                "path": "/api/{resource}/{action}"
+                                "path": "api/users/{resource}/{action}"
                             }
                             """
                 )
@@ -66,8 +66,7 @@ public class UserController {
     @Operation(summary = "Чтение.", description = "Получить пользователя из таблицы Users.")
     @GetMapping("read/id/{id}")
     public ResponseEntity<EntityModel<UserDTO>> getUserById(
-            @PositiveOrZero
-            @PathVariable("id") @Parameter(description = "Идентификатор пользователя") Integer id
+            @PositiveOrZero @PathVariable("id") @Parameter(description = "Идентификатор пользователя") Integer id
     ) {
         logger.info("getUserById() id = {}", id);
 
@@ -82,9 +81,8 @@ public class UserController {
     public ResponseEntity<EntityModel<UserDTO>> createUser(@Valid @RequestBody UserDTO userDTO) {
         logger.info("createUser() UserDTO  = {}", userDTO);
 
-        Optional<UserDTO> optionalUser = userService.createUser(userDTO);
-        EntityModel<UserDTO> model = toEntityModel(userDTO);
-        return optionalUser.isPresent() ? ResponseEntity.ok(model) : ResponseEntity.notFound().build();
+        UserDTO user = userService.createUser(userDTO).get();
+        return ResponseEntity.ok(toEntityModel(user));
     }
 
 
@@ -104,8 +102,8 @@ public class UserController {
 
     @Operation(summary = "Удаление.", description = "Удалить пользователя из таблицы Users.")
     @DeleteMapping("delete/id/{id}")
-    public ResponseEntity<EntityModel<Map<String, Boolean>>> deleteUser(@PositiveOrZero @PathVariable("id")
-                                                                        @Parameter(description = "Идентификатор пользователя") Integer id
+    public ResponseEntity<EntityModel<Map<String, Boolean>>> deleteUser(
+            @PositiveOrZero @PathVariable("id") @Parameter(description = "Идентификатор пользователя") Integer id
     ) {
         logger.info("deleteUser() id = {}", id);
 

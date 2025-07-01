@@ -1,19 +1,14 @@
 package ru.aston.controller;
 
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import jakarta.persistence.criteria.Root;
 import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.ParameterizedTypeReference;
-import org.springframework.hateoas.CollectionModel;
-import org.springframework.hateoas.EntityModel;
 import org.springframework.http.*;
 import org.springframework.web.client.HttpClientErrorException;
 import ru.aston.dao.UserDao;
@@ -22,9 +17,10 @@ import ru.aston.service.UserService;
 
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
-import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.NoSuchElementException;
+import java.util.stream.Collectors;
 
 import static org.junit.Assert.*;
 import static org.junit.jupiter.api.Assertions.assertAll;
@@ -189,27 +185,25 @@ public class UserControllerTest extends BaseIntegrationTest {
                 String.format("http://localhost:%d/api/users/findAll", port), HttpMethod.GET,null,
                 JsonNode.class);
 
-
-        JsonNode nodes = response.getBody().get("_embedded").get("userDTOList");
-        System.out.println(nodes.toString());
         ObjectMapper mapper = new ObjectMapper();
-        List<UserDTO> users = mapper.readValue(
-                nodes.toString(),
-                new TypeReference<List<UserDTO>>() {}
-        );
-        System.out.println(users);
+        JsonNode nodes = response.getBody().get("_embedded").get("userDTOList");
 
-        /*
-
-        List<UserDTO> userDTOList = root.getEmbedded().getUserDTOList();
-        System.out.println(response.getBody());
-        
-
+        List<UserDTO> users = mapper.readValue(nodes.toString(), new TypeReference<List<Map<String, Object>>>() {})
+                .stream()
+                .map(map -> new UserDTO(
+                        (Integer) map.get("id"),
+                        (String) map.get("name"),
+                        (String) map.get("email"),
+                        (Integer) map.get("age"),
+                        LocalDateTime.parse((String) map.get("createdAt"))
+                ))
+                .collect(Collectors.toList());
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertTrue(listSize == users.size());
         assertEquals(users.get(0), userOne);
         assertEquals(users.get(1), userTwo);
-        assertEquals(users.get(2), userThree);*/
+        assertEquals(users.get(2), userThree);
+
     }
 
 
